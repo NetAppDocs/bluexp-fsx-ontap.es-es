@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: start/task-getting-started-fsx.html 
-keywords: amazon fsx for ontap, fsx, netapp, data fabric, hybrid cloud, cloud, public cloud, networking, vpc, quick, getting started, install, installing, deploy, deploying, setup, setting up, launching, requirements, prerequisites, bluexp website, get started, network, vpn, tier, tiering, storage tier, data tier, granting, permissions, policy, iam policy, policies, attach, iam user, access key, secret key, keys, sign up, cloud manager, create 
+keywords: Amazon FSx for NetApp ONTAP, fsx, netapp, data fabric, hybrid cloud, cloud, public cloud, networking, vpc, quick, getting started, install, installing, deploy, deploying, setup, setting up, launching, requirements, prerequisites, bluexp website, get started, network, vpn, tier, tiering, storage tier, data tier, granting, permissions, policy, iam policy, policies, attach, iam user, access key, secret key, keys, sign up, cloud manager, create 
 summary: Con BlueXP, puede empezar a utilizar FSX para ONTAP en unos pocos pasos. 
 ---
-= Inicio rápido de Amazon FSX para ONTAP
+= Inicio rápido de Amazon FSX para ONTAP de NetApp
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -18,11 +18,11 @@ Uso link:https://docs.netapp.com/us-en/cloud-manager-family/["BlueXP"^], Usted p
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] Configurar un rol de IAM en AWS
 [role="quick-margin-para"]
-Para crear o gestionar un entorno de trabajo de Amazon FSX para ONTAP, debe agregar credenciales de AWS a BlueXP proporcionando la ARN de una función IAM que proporciona a BlueXP los permisos necesarios para crear un entorno de trabajo FSX para ONTAP. Para hacer esto, usted debe link:../requirements/task-setting-up-permissions-fsx.html["Configure una función de IAM que permita al SaaS BlueXP asumir la función"].
+Para crear o gestionar un entorno de trabajo de Amazon FSX para ONTAP de NetApp, debe añadir credenciales de AWS a BlueXP proporcionando la ARN de un rol de IAM que proporciona a BlueXP los permisos necesarios para crear un entorno de trabajo FSX para ONTAP. Para hacer esto, usted debe link:../requirements/task-setting-up-permissions-fsx.html["Configure una función de IAM que permita al SaaS BlueXP asumir la función"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Crear un entorno de trabajo FSX para ONTAP
 [role="quick-margin-para"]
-Debe link:../use/task-creating-fsx-working-environment.html["Cree un entorno de trabajo de Amazon FSX para ONTAP"] antes de añadir volúmenes.
+Debe link:../use/task-creating-fsx-working-environment.html["Cree un entorno de trabajo de Amazon FSX para ONTAP de NetApp"] antes de añadir volúmenes.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] Cree un conector para AWS
 [role="quick-margin-para"]

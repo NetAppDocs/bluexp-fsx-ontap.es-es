@@ -4,7 +4,7 @@ permalink: use/task-manage-fsx-volumes.html
 keywords: fsx for ontap, fsx, aws, delete volumes, delete nfs volumes, delete cifs volumes, tiering policy, mount path, get mount path, mount volume, delete volumes, snapshots, edit volume, clone volume, clone 
 summary: Puede gestionar volúmenes, clones y copias Snapshot, y cambiar las políticas de organización en niveles de FSX para ONTAP con BlueXP. 
 ---
-= Gestione volúmenes para Amazon FSX para ONTAP
+= Gestione volúmenes para Amazon FSX para ONTAP de NetApp
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: use/task-manage-working-environment.html 
-keywords: amazon fsx for ontap, fsx, manage working environment, delete working environment, remove working environment, throughput capacity, change throughput, automatic capacity management, capacity management, storage capacity 
+keywords: amazon fsx for netapp ontap, fsx, manage working environment, delete working environment, remove working environment, throughput capacity, change throughput, automatic capacity management, capacity management, storage capacity 
 summary: BlueXP le permite gestionar su entorno de trabajo FSX para ONTAP. Es posible habilitar la gestión automática de la capacidad, modificar el rendimiento y la capacidad de almacenamiento, e IOPS, y eliminar o eliminar el entorno de trabajo. 
 ---
-= Gestione un entorno de trabajo de Amazon FSX para ONTAP
+= Gestione un entorno de trabajo de Amazon FSX para ONTAP de NetApp
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

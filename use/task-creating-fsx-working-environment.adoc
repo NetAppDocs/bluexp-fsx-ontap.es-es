@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: use/task-creating-fsx-working-environment.html 
-keywords: amazon fsx for ontap, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones, discover, storage capacity, iops, throughput 
+keywords: Amazon FSx for NetApp ONTAP, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones, discover, storage capacity, iops, throughput 
 summary: Con BlueXP puede crear o descubrir entornos de trabajo FSX para ONTAP para agregar y gestionar volúmenes y servicios de datos adicionales. 
 ---
-= Cree o descubra un entorno de trabajo de Amazon FSX para ONTAP
+= Cree o descubra un entorno de trabajo de Amazon FSX para ONTAP de NetApp
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -18,7 +18,7 @@ Con BlueXP puede crear o descubrir un entorno de trabajo FSX para ONTAP para agr
 
 
 
-== Cree un entorno de trabajo de Amazon FSX para ONTAP
+== Cree un entorno de trabajo de Amazon FSX para ONTAP de NetApp
 
 El primer paso es crear un entorno de trabajo FSX para ONTAP. Si ya ha creado un FSX para el sistema de archivos ONTAP en la consola de gestión de AWS, puede link:task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system["Descúbralo mediante BlueXP"].
 
@@ -30,9 +30,9 @@ Antes de crear su entorno de trabajo FSX para ONTAP en BlueXP, necesitará:
 
 
 .Pasos
-. En BlueXP, agregue un nuevo entorno de trabajo, seleccione *Servicios Web de Amazon* y haga clic en *Añadir nuevo* para Amazon FSX para ONTAP.
+. En BlueXP, añada un nuevo entorno de trabajo, seleccione *Amazon Web Services* y haga clic en *Add new* para Amazon FSX para NetApp ONTAP.
 +
-image:screenshot_add_fsx_working_env.png["Captura de pantalla de la adición de un entorno de trabajo para Amazon FSX para ONTAP"]
+image:screenshot_add_fsx_working_env.png["Una captura de pantalla de la adición de un entorno de trabajo para Amazon FSX para ONTAP de NetApp"]
 
 . *FSX para la autenticación ONTAP*
 +
@@ -93,7 +93,7 @@ NOTE: Si especifica un valor de IOPS que no cumple los requisitos mínimos, reci
 .Resultado
 BlueXP muestra la configuración de su FSX para ONTAP en el lienzo. Ahora puede añadir volúmenes a su entorno de trabajo FSX para ONTAP con BlueXP.
 
-image:screenshot_add_fsx_cloud.png["Captura de pantalla de Amazon FSX para ONTAP en la página entornos de trabajo."]
+image:screenshot_add_fsx_cloud.png["Captura de pantalla de Amazon FSX para ONTAP de NetApp en la página entornos de trabajo."]
 
 
 
