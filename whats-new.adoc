@@ -18,6 +18,14 @@ Descubra las novedades de Amazon FSX para ONTAP de NetApp.
 
 
 
+== 02 de abril de 2023
+
+* Ahora puede hacerlo link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#create-volumes["Cree un FlexGroup en FSX para ONTAP"^] volúmenes para distribuir datos de volúmenes en el clúster.
+* El límite de IOPS se aumenta para permitir el aprovisionamiento manual o automático hasta 160,000.
+
+
+
+
 == 05 de marzo de 2023
 
 Se han realizado mejoras en la interfaz de usuario y se han actualizado las capturas de pantalla en la documentación.

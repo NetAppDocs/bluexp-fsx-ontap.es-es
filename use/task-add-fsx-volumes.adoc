@@ -42,6 +42,11 @@ image:screenshot-add-volume.png["Captura de pantalla de la opción Add volume de
 .. Los campos de máquina virtual de almacenamiento (SVM) rellena automáticamente la SVM en función del nombre del entorno de trabajo.
 .. Introduzca el tamaño del volumen y seleccione una unidad (GIB o TIB). Tenga en cuenta que el tamaño del volumen crecerá con el uso.
 .. Seleccione una política de Snapshot. De forma predeterminada, se realiza una copia de Snapshot cada hora (manteniendo las últimas seis copias), cada día (manteniendo las dos últimas copias) y cada semana (manteniendo las dos últimas copias).
+.. De manera opcional, seleccione la opción optimización para crear una FlexGroup y distribuir datos de volúmenes en el clúster.
++
+
+NOTE: La distribución FlexGroup solo está disponible para protocolos de volúmenes NFS y CIFS.
+
 
 
 . *Protocolo de volúmenes*:
@@ -129,6 +134,10 @@ image:screenshot-volume-protocol-iscsi.png["Una captura de pantalla de la config
 .. De forma predeterminada, *la directiva de segmentación* se establece en *sólo instantánea*. Puede seleccionar una política de organización en niveles diferente en función de sus necesidades.
 +
 image:screenshot_fsx_volume_usage_tiering.png["Una captura de pantalla del perfil de uso y la configuración de niveles para FSX para la creación de volúmenes de ONTAP."]
+
+.. Si seleccionó Optimization (FlexGroup), debe especificar el número de componentes a los que se deben distribuir los datos de volúmenes en. Se recomienda encarecidamente utilizar un número par de componentes para garantizar una distribución uniforme de los datos. La mejor práctica son 8 componentes.
++
+image:screenshot-constituents.png["Captura de pantalla del campo para especificar el número de componentes a los que se deben distribuir los datos del volumen."]
 
 
 
