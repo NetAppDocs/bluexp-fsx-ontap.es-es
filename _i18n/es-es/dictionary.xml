@@ -45,8 +45,6 @@
   <block id="2ccb2d581067f0eac436a078317d136d" category="section-title">Gestione la capacidad automática sin un conector activo</block>
   <block id="13c4ac4dcec1decf7e36eed04316808f" category="paragraph">Es posible gestionar la capacidad automática sin un conector activo en AWS.</block>
   <block id="5f1502c18596a814041ff3a5f4953b39" category="list-text">Abra el FSX para el entorno de trabajo de ONTAP.</block>
-  <block id="eae78abc1ac9b9443e78946ea0ac6f62" category="inline-image-macro">Captura de pantalla del menú gestionar capacidad automática.</block>
-  <block id="8568f4aa8725b5fac6d8be22b191626f" category="paragraph"><block ref="8568f4aa8725b5fac6d8be22b191626f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7c48e42b8eb4f773ff1ba4e512f8d941" category="list-text">En la página *Gestión automática de la capacidad*:</block>
   <block id="fc3a15f119ad5decc28ff415b2538e29" category="list-text">Seleccione la casilla para habilitar la gestión automática de la capacidad.</block>
   <block id="b7e02100f637951d6f90e4991487480c" category="list-text">Anule la selección de la casilla para deshabilitar la gestión automática de la capacidad si se habilitó anteriormente.</block>
@@ -61,14 +59,10 @@
   <block id="ad7e5366eeeef80a0cca58ed2f228e69" category="inline-link">Conector en AWS</block>
   <block id="e85b82fa898245e765ecb2eab8ee886e" category="paragraph">Necesita un activo<block ref="f8ec938ce1f3506a828c9f7802c63902" category="inline-link-rx"></block>.</block>
   <block id="2498d03a4261c0c377ff9aa14f08a01b" category="list-text">Seleccione el icono del lápiz (<block ref="a3ce23dbf8ced4424507771e4b6881ae" category="inline-image-macro-rx" type="image"></block>) Para abrir la página de edición *capacidad de procesamiento*.</block>
-  <block id="87b240f45f566a73d19136ab81e90ad1" category="inline-image-macro">Una captura de pantalla de la ubicación del menú de capacidad de cambio de rendimiento.</block>
-  <block id="e09dc417c2d896d165ca331477153842" category="paragraph"><block ref="e09dc417c2d896d165ca331477153842" category="inline-image-macro-rx" type="image"></block></block>
   <block id="230f70d1e5d26fbe6e5ad10f5308cabe" category="list-text">Seleccione una nueva capacidad de rendimiento en el menú desplegable y seleccione *Actualizar*. Este cambio puede tardar hasta 25 minutos en surtir efecto y no interrumpe el acceso a los datos.</block>
   <block id="a0ebe9e341b2c5054b22afc7d98d1401" category="section-title">Cambie la capacidad de almacenamiento y las IOPS</block>
   <block id="f3c93b45ca50102a9f0b7eae1e06d071" category="paragraph">Puede cambiar la capacidad de almacenamiento y las IOPS en cualquier momento después de crear el FSX para el entorno de trabajo ONTAP.</block>
   <block id="048b8d92cffbe45e8afec553ae5bdab0" category="list-text">Seleccione el icono del lápiz (<block ref="a3ce23dbf8ced4424507771e4b6881ae" category="inline-image-macro-rx" type="image"></block>) Para abrir la página de edición *capacidad de almacenamiento e IOPS*.</block>
-  <block id="d6684930c2875391fe70b5eb14401bbb" category="inline-image-macro">Una captura de pantalla de la ubicación del menú Cambiar capacidad de almacenamiento e IOPS.</block>
-  <block id="687579d242782f9a851dc5bb5ba9abc9" category="paragraph"><block ref="687579d242782f9a851dc5bb5ba9abc9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dfb628b495d5e0828edcde206a117a0d" category="list-text">Puede cambiar la capacidad de almacenamiento y la tasa de IOPS una vez cada seis horas. Si intenta realizar cambios con mayor frecuencia, recibirá un error.</block>
   <block id="e67f7cfa37e5dcd4f3836e76f5301a68" category="inline-image-macro">Captura de pantalla de la página para cambiar la capacidad de almacenamiento y los valores de IOPS.</block>
   <block id="f5aa006a4894acbba121bdb32f513ead" category="paragraph"><block ref="f5aa006a4894acbba121bdb32f513ead" category="inline-image-macro-rx" type="image"></block></block>
@@ -484,7 +478,6 @@
   <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">NetApp ofrece soporte para BlueXP y sus servicios cloud de diversas maneras. Hay disponibles amplias opciones de auto soporte gratuito las 24 horas del día, los 7 días de la semana, como artículos de la base de conocimiento (KB) y un foro de la comunidad. Su registro de soporte incluye soporte técnico remoto a través de tickets web.</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">Estas opciones están disponibles de forma gratuita, las 24 horas del día, los 7 días de la semana:</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">Base de conocimientos</block>
-  <block id="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="list-text"><block ref="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="inline-link-rx"></block></block>
   <block id="9a3db1abe5491d0eb9bb5d125981356c" category="paragraph">Busque en la base de conocimientos de BlueXP para encontrar artículos útiles para resolver problemas.</block>
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">Comunidades</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
@@ -630,7 +623,6 @@
   <block id="190d60175b0eacbdfa304b7842dfdbeb" category="paragraph">BlueXP muestra el sistema de archivos FSX para ONTAP descubierto en el lienzo. Ahora puede añadir volúmenes a su entorno de trabajo FSX para ONTAP con BlueXP.</block>
   <block id="7ed3f8d43ed4db5c9e5058ffd0629f8e" category="list-text">Seleccione el entorno de trabajo FSX para ONTAP en el lienzo.</block>
   <block id="ecfec57afc8858c85d63541a36a09dab" category="inline-image-macro">icono de tres puntos</block>
-  <block id="c0f7f08571189db02e2d550c230d6abf" category="list-text">En el panel *Detalles*, utilice el icono de tres puntos (<block ref="4d658ec40ed039406a8a891871de0f3d" category="inline-image-macro-rx" type="image"></block>) para abrir el menú de opciones. Haga clic en *gestionar capacidad automática*.</block>
   <block id="0cf6b9b81deec54f9429260623e85e8b" category="paragraph">Antes de eliminar el entorno de trabajo, debe:</block>
   <block id="23419c7b0a3275446ffc7e82955443ad" category="list-text">Rompa todas las relaciones de replicación con este entorno de trabajo.</block>
   <block id="1cf37f8bb2a45b0eb43d008c81e06383" category="inline-link-macro">Elimine todos los volúmenes</block>
@@ -748,4 +740,7 @@
   <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*Accesorio (opcional)*: Cargue hasta cinco archivos adjuntos, uno a la vez.</block>
   <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">Los archivos adjuntos están limitados a 25 MB por archivo. Se admiten las siguientes extensiones de archivo: Txt, log, pdf, jpg/jpeg, rtf, doc/docx, xls/xlsx y csv.</block>
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*Actualizar notas de caso*: Proporcione detalles adicionales sobre su problema o seleccione *cargar archivos* para adjuntar hasta un máximo de cinco archivos.</block>
+  <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
+  <block id="857256e1923ea05bf18e14bc2411a2f6" category="list-text">Seleccione el entorno de trabajo en el lienzo y seleccione *Ingresar entorno de trabajo*.</block>
+  <block id="015abe149b937f218b783e72c81c3e66" category="admonition">Todas las demás opciones requieren un conector y están desactivadas.</block>
 </blocks>

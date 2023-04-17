@@ -34,12 +34,12 @@ La gestión automática de la capacidad está deshabilitada de manera predetermi
 Es posible gestionar la capacidad automática sin un conector activo en AWS.
 
 .Pasos
-. Seleccione el entorno de trabajo FSX para ONTAP en el lienzo.
-. En el panel *Detalles*, utilice el icono de tres puntos (image:icon-three-dots.png["icono de tres puntos"]) para abrir el menú de opciones. Haga clic en *gestionar capacidad automática*.
+. Seleccione el entorno de trabajo en el lienzo y seleccione *Ingresar entorno de trabajo*.
+. Seleccione el icono del lápiz (image:icon-pencil.png["Imagen del icono de edición de lápiz."]) Para abrir la página *Gestión automática de la capacidad*.
 +
-image:screenshot-auto-capacity-no-connector.png["Captura de pantalla del menú gestionar capacidad automática."]
 
-. En la página *Gestión automática de la capacidad*:
+NOTE: Todas las demás opciones requieren un conector y están desactivadas.
+
 +
 ** Seleccione la casilla para habilitar la gestión automática de la capacidad.
 ** Anule la selección de la casilla para deshabilitar la gestión automática de la capacidad si se habilitó anteriormente.
@@ -80,9 +80,6 @@ Necesita un activo https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-
 . Abra el FSX para el entorno de trabajo de ONTAP.
 . En la ficha *Descripción general*, seleccione *Características*.
 . Seleccione el icono del lápiz (image:icon-pencil.png["Imagen del icono de edición de lápiz."]) Para abrir la página de edición *capacidad de procesamiento*.
-+
-image:screenshot-change-thruput.png["Una captura de pantalla de la ubicación del menú de capacidad de cambio de rendimiento."]
-
 . Seleccione una nueva capacidad de rendimiento en el menú desplegable y seleccione *Actualizar*. Este cambio puede tardar hasta 25 minutos en surtir efecto y no interrumpe el acceso a los datos.
 
 
@@ -99,9 +96,6 @@ Necesita un activo https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-
 . Abra el FSX para el entorno de trabajo de ONTAP.
 . En la ficha *Descripción general*, seleccione *Características*.
 . Seleccione el icono del lápiz (image:icon-pencil.png["Imagen del icono de edición de lápiz."]) Para abrir la página de edición *capacidad de almacenamiento e IOPS*.
-+
-image:screenshot-change-iops.png["Una captura de pantalla de la ubicación del menú Cambiar capacidad de almacenamiento e IOPS."]
-
 . Puede cambiar la capacidad de almacenamiento y la tasa de IOPS una vez cada seis horas. Si intenta realizar cambios con mayor frecuencia, recibirá un error.
 +
 image:screenshot-configure-iops.png["Captura de pantalla de la página para cambiar la capacidad de almacenamiento y los valores de IOPS."]
