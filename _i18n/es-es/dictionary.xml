@@ -609,7 +609,6 @@
   <block id="b04e1903e3de2fffa52c1c517b8fed45" category="list-text">* Tablas de rutas* (sólo zonas de disponibilidad múltiple)</block>
   <block id="f884e9a3951c5c6df696ce1faeecf517" category="paragraph">Seleccione tablas de rutas que incluyan rutas a las direcciones IP flotantes. Si sólo tiene una tabla de rutas para las subredes en el VPC (la tabla de rutas principal), BlueXP agrega automáticamente las direcciones IP flotantes a esa tabla de rutas.</block>
   <block id="a150e060bd138eb9dd07f260966de37f" category="list-text">*Cifrado de datos*</block>
-  <block id="9ecf502b4c55c670661584e0a2866004" category="paragraph">Acepte la clave maestra predeterminada de AWS o haga clic en *Cambiar clave* para seleccionar una clave maestra de cliente de AWS (CMK) diferente. Para obtener más información sobre CMK, consulte<block ref="e519e39311516455306db28fa7daaed2" category="inline-link-rx"></block>.</block>
   <block id="a1ab9258bbeb31ecc1e35b1adc9465dc" category="list-text">*Configuración de almacenamiento*</block>
   <block id="e38fe475552b433630789034542b28de" category="list-text">Seleccione el rendimiento, la capacidad y la unidad. Es posible cambiar el rendimiento, la capacidad de almacenamiento y las IOPS en cualquier momento.</block>
   <block id="704b454e0a67ad9d30229aad055c4456" category="paragraph"><block ref="704b454e0a67ad9d30229aad055c4456" category="inline-image-macro-rx" type="image"></block></block>
@@ -618,8 +617,6 @@
   <block id="a434ec7166240525e1136a9caf043a5e" category="list-text">Haga clic en *anterior* para realizar cambios en cualquier configuración o en *Agregar* para aceptar la configuración y crear su entorno de trabajo.</block>
   <block id="1f56efe328efe9c20f590e659125509a" category="paragraph">BlueXP muestra la configuración de su FSX para ONTAP en el lienzo. Ahora puede añadir volúmenes a su entorno de trabajo FSX para ONTAP con BlueXP.</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">Acerca de esta tarea</block>
-  <block id="3c98e2bfe156ca99fa37e38b1eb68d0d" category="inline-link-macro">crear un nuevo entorno de trabajo</block>
-  <block id="e3ed7d241946f79ddb205b1bcc1095b7" category="paragraph">Puede descubrir FSX para sistemas de archivos ONTAP mediante <block ref="7605911292967addd7ea4683855fa385" category="inline-link-macro-rx"></block> O utilizando la página *Mis oportunidades*. En esta tarea se describe el descubrimiento mediante *Mis oportunidades*</block>
   <block id="190d60175b0eacbdfa304b7842dfdbeb" category="paragraph">BlueXP muestra el sistema de archivos FSX para ONTAP descubierto en el lienzo. Ahora puede añadir volúmenes a su entorno de trabajo FSX para ONTAP con BlueXP.</block>
   <block id="7ed3f8d43ed4db5c9e5058ffd0629f8e" category="list-text">Seleccione el entorno de trabajo FSX para ONTAP en el lienzo.</block>
   <block id="ecfec57afc8858c85d63541a36a09dab" category="inline-image-macro">icono de tres puntos</block>
@@ -743,4 +740,6 @@
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
   <block id="857256e1923ea05bf18e14bc2411a2f6" category="list-text">Seleccione el entorno de trabajo en el lienzo y seleccione *Ingresar entorno de trabajo*.</block>
   <block id="015abe149b937f218b783e72c81c3e66" category="admonition">Todas las demás opciones requieren un conector y están desactivadas.</block>
+  <block id="5f7a63a809602fb324d9cb35527588c3" category="paragraph">Acepte la clave maestra predeterminada de AWS o haga clic en *Cambiar clave* para seleccionar una clave maestra de cliente de AWS (CMK) diferente. Para obtener más información sobre CMK, consulte <block ref="1dc4ebcb4490720ee959d2e943d1421f" category="inline-link-macro-rx"></block>.</block>
+  <block id="a5444638448a3ec03827da5d57eb445b" category="paragraph">Puede descubrir los sistemas de archivos FSx para ONTAP cuando usted <block ref="7d3d3d003158d818e356e6a619082003" category="inline-xref-macro-rx"></block> O mediante el uso de la página *Mis oportunidades*. En esta tarea se describe el descubrimiento mediante *Mis oportunidades*</block>
 </blocks>

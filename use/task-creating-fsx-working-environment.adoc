@@ -67,7 +67,7 @@ Seleccione tablas de rutas que incluyan rutas a las direcciones IP flotantes. Si
 
 . *Cifrado de datos*
 +
-Acepte la clave maestra predeterminada de AWS o haga clic en *Cambiar clave* para seleccionar una clave maestra de cliente de AWS (CMK) diferente. Para obtener más información sobre CMK, consulte https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/https://docs.netapp.com/us-en/occm/task-setting-up-kms.html["Configuración de AWS KMS"^].
+Acepte la clave maestra predeterminada de AWS o haga clic en *Cambiar clave* para seleccionar una clave maestra de cliente de AWS (CMK) diferente. Para obtener más información sobre CMK, consulte link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-setting-up-kms.html["Configuración de AWS KMS"^].
 
 . *Configuración de almacenamiento*
 +
@@ -102,7 +102,7 @@ image:screenshot_add_fsx_cloud.png["Captura de pantalla de Amazon FSX para ONTAP
 Si anteriormente ha proporcionado sus credenciales de AWS a BlueXP, *Mis oportunidades* puede descubrir y sugerir automáticamente FSX para sistemas de archivos ONTAP para agregar y gestionar con BlueXP. También puede revisar los servicios de datos disponibles.
 
 .Acerca de esta tarea
-Puede descubrir FSX para sistemas de archivos ONTAP mediante link:/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-ontap-working-environment["crear un nuevo entorno de trabajo"] O utilizando la página *Mis oportunidades*. En esta tarea se describe el descubrimiento mediante *Mis oportunidades*
+Puede descubrir los sistemas de archivos FSx para ONTAP cuando usted <<Cree un entorno de trabajo de Amazon FSX para ONTAP de NetApp>> O mediante el uso de la página *Mis oportunidades*. En esta tarea se describe el descubrimiento mediante *Mis oportunidades*
 
 .Pasos
 . En BlueXP, haga clic en la ficha *Mis oportunidades*.
