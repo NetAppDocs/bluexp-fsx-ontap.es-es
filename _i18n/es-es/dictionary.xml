@@ -174,7 +174,6 @@
   <block id="abca63d751ec4cebd209af264e376ee4" category="inline-link">replicación de datos entre sistemas</block>
   <block id="060dde3ca9c7d4e73cf9b65b84114028" category="paragraph">Puede replicar datos entre entornos de almacenamiento con BlueXP. Para configurar FSX para la replicación de ONTAP, consulte<block ref="063d7001b249d0164d3c6e7cd82a78db" category="inline-link-rx"></block>.</block>
   <block id="35931d34af92c203401fd4bb760eb1cf" category="inline-link">creación de relaciones de sincronización</block>
-  <block id="6b91242d31fee1e3576ce594b08573b5" category="paragraph">Puede crear relaciones de sincronización con Cloud Sync en BlueXP. Para configurar las relaciones de sincronización, consulte<block ref="3bb02b9d4fba268ff940f67f5abfe3eb" category="inline-link-rx"></block>.</block>
   <block id="f91674f3b22216fc484532cd24dda908" category="section-title">Elimine volúmenes</block>
   <block id="9497c556620605c0441cf034ff68a527" category="paragraph">Elimine los volúmenes que ya no necesita.</block>
   <block id="f257be535aca4e5a3655fc2dd2887500" category="paragraph">No puede eliminar un volumen que anteriormente formaba parte de una relación de SnapMirror con BlueXP. Los volúmenes de SnapMirror deben eliminarse con la consola de gestión de AWS o la interfaz de línea de comandos.</block>
@@ -312,10 +311,8 @@
   <block id="7dca630291dc35d5447daa0c9abf8da4" category="cell">Proporciona acceso SSH al host de Connector</block>
   <block id="293c9ea246ff9985dc6f62a650f78986" category="cell">HTTP</block>
   <block id="f033ab37c30201f73f142449d037028d" category="cell">80</block>
-  <block id="e41468f89241b53dc9a8cebeff010b25" category="cell">Proporciona acceso HTTP desde exploradores web de cliente a la interfaz de usuario local y conexiones desde Cloud Data Sense</block>
   <block id="2f0c197eb73a7c6da10b03384f241025" category="cell">Proporciona acceso HTTPS desde exploradores web de cliente al local interfaz de usuario</block>
   <block id="dff8e9c2ac33381546d96deea9922999" category="cell">3128</block>
-  <block id="187604dd1244abc6ff03471775e9f32d" category="cell">Proporciona a la instancia de Cloud Data Sense acceso a Internet, si la red AWS no utiliza NAT o proxy</block>
   <block id="f27967c4c8769094dfb727988a22cbfa" category="paragraph">El grupo de seguridad predefinido para el conector abre todo el tráfico saliente. Si eso es aceptable, siga las reglas básicas de la salida. Si necesita más reglas rígidas, utilice las reglas avanzadas de salida.</block>
   <block id="422c84262f431352e9da45084016a52c" category="paragraph">El grupo de seguridad predefinido para el conector incluye las siguientes reglas de salida.</block>
   <block id="4c7e4350b2ac4e79ecdf1d8f33b2d41e" category="paragraph">Si necesita reglas rígidas para el tráfico saliente, puede utilizar la siguiente información para abrir sólo los puertos necesarios para la comunicación saliente por parte del conector.</block>
@@ -328,9 +325,6 @@
   <block id="172ef5a94b4dd0aa120c6878fc29f70c" category="cell">8088</block>
   <block id="168342a53455f99d5b1d8d7d95e99567" category="cell">Llamadas API a Backup en S3</block>
   <block id="ecd87ae03b07f0712964d94eb75683a5" category="cell">Utilizado para resolver DNS por BlueXP</block>
-  <block id="d882bf73cd5caf1e5aa39edbf893ad74" category="cell">Cloud Data SENSE</block>
-  <block id="6cf25d0dcbf586ed6aff3b930e4d8019" category="cell">Instancia de Cloud Data Sense</block>
-  <block id="059ace13ef3980df592dafb754ef8883" category="cell">Cloud Data SENSE para Cloud Volumes ONTAP</block>
   <block id="8fad3d94a3385eeb6406613f49896cdd" category="doc">Configure permisos para FSX para ONTAP</block>
   <block id="d8a56d983b91f097e5ba55dd03a18509" category="section-title">Configure el rol IAM</block>
   <block id="1db8d07619da1f12a7b920676f6769ae" category="paragraph">Configure una función de IAM que permita a BlueXP asumir la función.</block>
@@ -375,12 +369,8 @@
   <block id="6c2a9ed4ea140413912e894a10672e01" category="list-text">Opción de precios incluidos y de pago por uso.</block>
   <block id="6a7ebeee8a870484e91de7ed605595e5" category="section-title">Características adicionales en BlueXP</block>
   <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="inline-link-macro">BlueXP</block>
-  <block id="c8e7a79b3e62d2a377fbadb534f60c42" category="list-text">Uso <block ref="ac523c62451e38c65aafdd45e2bf5230" category="inline-link-macro-rx"></block> (Anteriormente Cloud Manager) y un conector en AWS, puede crear y gestionar volúmenes, replicar datos e integrar FSX para ONTAP con servicios cloud de NetApp, como Data Sense y Cloud Sync.</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">Leer más</block>
-  <block id="d9bf9116e04a89e455600416ad7872f3" category="list-text">Mediante la tecnología basada en la inteligencia artificial (IA), Cloud Data Sense puede ayudarle a comprender el contexto de los datos e identificar los datos confidenciales que residen en sus cuentas de FSX para ONTAP.<block ref="ff015941fa4b0cfada66f8159ed80c63" category="inline-link-rx"></block>.</block>
-  <block id="1f944a9ec2785c18a692aeedf9839548" category="list-text">Con Cloud Sync de NetApp, puede automatizar la migración de datos a cualquier destino, ya sea en el cloud o en las instalaciones.<block ref="0d960aec46349f597fec0ba1ad479bc2" category="inline-link-rx"></block></block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">Coste</block>
-  <block id="bcde5e61b57c391c5832e7ea9a5bf2b1" category="paragraph">El uso del conector en AWS tiene un coste adicional y los servicios de datos opcionales, como Cloud Sync y Data Sense.</block>
   <block id="8c4b25218155a1fdb972f4169855d04f" category="section-title">Regiones admitidas</block>
   <block id="d5b1044cbc510048a5dac270bde89ed5" category="inline-link">Consulte las regiones de Amazon admitidas.</block>
   <block id="ee9b3af8630059982f4d1dd2fd3834a3" category="paragraph"><block ref="ee9b3af8630059982f4d1dd2fd3834a3" category="inline-link-rx"></block></block>
@@ -404,7 +394,6 @@
   <block id="4bd8fd698bf66b76447369f6d59d7e0f" category="inline-link-macro">Creación y montaje de FSX para volúmenes de ONTAP</block>
   <block id="3a994a785ff4b046a381ab2afb6d0e17" category="paragraph">Puede hacerlo <block ref="c98786904f437c4c5be9aec70a11cbb2" category="inline-link-macro-rx"></block> Uso de BlueXP.</block>
   <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">El futuro</block>
-  <block id="dae3b13fec3bf110f92a7547c071e053" category="paragraph">Ahora puede usar BlueXP para gestionar sus volúmenes y configurar servicios adicionales como replicación, Cloud Sync y detección de datos.</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="summary"></block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Avisos legales</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">Los avisos legales proporcionan acceso a las declaraciones de copyright, marcas comerciales, patentes y mucho más.</block>
@@ -742,4 +731,14 @@
   <block id="015abe149b937f218b783e72c81c3e66" category="admonition">Todas las demás opciones requieren un conector y están desactivadas.</block>
   <block id="5f7a63a809602fb324d9cb35527588c3" category="paragraph">Acepte la clave maestra predeterminada de AWS o haga clic en *Cambiar clave* para seleccionar una clave maestra de cliente de AWS (CMK) diferente. Para obtener más información sobre CMK, consulte <block ref="1dc4ebcb4490720ee959d2e943d1421f" category="inline-link-macro-rx"></block>.</block>
   <block id="a5444638448a3ec03827da5d57eb445b" category="paragraph">Puede descubrir los sistemas de archivos FSx para ONTAP cuando usted <block ref="7d3d3d003158d818e356e6a619082003" category="inline-xref-macro-rx"></block> O mediante el uso de la página *Mis oportunidades*. En esta tarea se describe el descubrimiento mediante *Mis oportunidades*</block>
+  <block id="b8bb58c0dcb24fd404f0afdb514812dd" category="paragraph">Ahora puedes utilizar BlueXP para gestionar los volúmenes y configurar servicios adicionales, como replicación, copia y sincronización y clasificación.</block>
+  <block id="8f5824ab39555c09f787c12e2a079d11" category="list-text">Uso <block ref="ac523c62451e38c65aafdd45e2bf5230" category="inline-link-macro-rx"></block> (Cloud Manager) y un conector en AWS, puedes crear y gestionar volúmenes, replicar datos e integrar FSx para ONTAP con servicios de nube de NetApp, como la clasificación de BlueXP y la copia y sincronización de BlueXP (Cloud Sync).</block>
+  <block id="421285ceb2b9d53d23a60802835cfe70" category="list-text">Mediante la tecnología impulsada por la inteligencia artificial (IA), la clasificación de BlueXP (Cloud Data Sense) puede ayudarte a comprender el contexto de los datos e identificar los datos confidenciales que residen en tus cuentas de FSx para ONTAP.<block ref="ff015941fa4b0cfada66f8159ed80c63" category="inline-link-rx"></block>.</block>
+  <block id="e0a61971650c75e6c98840f20042d128" category="list-text">Con la copia y sincronización de BlueXP, podrá automatizar la migración de datos a cualquier destino en la nube u on-premises.<block ref="0d960aec46349f597fec0ba1ad479bc2" category="inline-link-rx"></block></block>
+  <block id="ad9a464e359af0e32ba4423fbe150c59" category="paragraph">Hay un coste adicional asociado al uso del conector en AWS y a servicios de datos opcionales, como la copia y sincronización de BlueXP y la clasificación de BlueXP.</block>
+  <block id="2457d874eb9fc3fb2b8e5f23618c1c7f" category="cell">Proporciona acceso HTTP desde los navegadores web del cliente a la interfaz de usuario local y las conexiones desde la instancia de clasificación de BlueXP</block>
+  <block id="02499ddfc19d9b80567e19eb3f97deb0" category="cell">Proporciona acceso a Internet a la instancia de clasificación de BlueXP si la red AWS no utiliza un NAT o un proxy</block>
+  <block id="4cc849f381058f76f6b72a1c4279393d" category="cell">Clasificación de BlueXP</block>
+  <block id="a7f8c8869966601b4670aae0a070ba31" category="cell">Clasificación de BlueXP para Cloud Volumes ONTAP</block>
+  <block id="a13fe54147eef01f0ae918612d6a4216" category="paragraph">Puedes crear relaciones de sincronización mediante la copia y sincronización de BlueXP. Para configurar las relaciones de sincronización, consulte<block ref="3bb02b9d4fba268ff940f67f5abfe3eb" category="inline-link-rx"></block>.</block>
 </blocks>

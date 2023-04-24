@@ -33,4 +33,4 @@ Debe tener un https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-co
 Puede hacerlo link:../use/task-add-fsx-volumes.html["Creación y montaje de FSX para volúmenes de ONTAP"] Uso de BlueXP.
 
 .El futuro
-Ahora puede usar BlueXP para gestionar sus volúmenes y configurar servicios adicionales como replicación, Cloud Sync y detección de datos.
+Ahora puedes utilizar BlueXP para gestionar los volúmenes y configurar servicios adicionales, como replicación, copia y sincronización y clasificación.

@@ -100,7 +100,7 @@ Cambie la política de organización en niveles del volumen.
 
 Puede replicar datos entre entornos de almacenamiento con BlueXP. Para configurar FSX para la replicación de ONTAP, consulte https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["replicación de datos entre sistemas"^].
 
-Puede crear relaciones de sincronización con Cloud Sync en BlueXP. Para configurar las relaciones de sincronización, consulte https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html["creación de relaciones de sincronización"^].
+Puedes crear relaciones de sincronización mediante la copia y sincronización de BlueXP. Para configurar las relaciones de sincronización, consulte https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html["creación de relaciones de sincronización"^].
 
 
 

@@ -31,9 +31,9 @@ link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["A
 
 == Características adicionales en BlueXP
 
-* Uso link:https://docs.netapp.com/us-en/cloud-manager-family/["BlueXP"^] (Anteriormente Cloud Manager) y un conector en AWS, puede crear y gestionar volúmenes, replicar datos e integrar FSX para ONTAP con servicios cloud de NetApp, como Data Sense y Cloud Sync.
-* Mediante la tecnología basada en la inteligencia artificial (IA), Cloud Data Sense puede ayudarle a comprender el contexto de los datos e identificar los datos confidenciales que residen en sus cuentas de FSX para ONTAP. https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Leer más"^].
-* Con Cloud Sync de NetApp, puede automatizar la migración de datos a cualquier destino, ya sea en el cloud o en las instalaciones. https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["Leer más"^]
+* Uso link:https://docs.netapp.com/us-en/cloud-manager-family/["BlueXP"^] (Cloud Manager) y un conector en AWS, puedes crear y gestionar volúmenes, replicar datos e integrar FSx para ONTAP con servicios de nube de NetApp, como la clasificación de BlueXP y la copia y sincronización de BlueXP (Cloud Sync).
+* Mediante la tecnología impulsada por la inteligencia artificial (IA), la clasificación de BlueXP (Cloud Data Sense) puede ayudarte a comprender el contexto de los datos e identificar los datos confidenciales que residen en tus cuentas de FSx para ONTAP. https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Leer más"^].
+* Con la copia y sincronización de BlueXP, podrá automatizar la migración de datos a cualquier destino en la nube u on-premises. https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["Leer más"^]
 
 
 
@@ -42,7 +42,7 @@ link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["A
 
 Su cuenta FSX para ONTAP es mantenida por AWS y no por BlueXP. Consulte https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["Guía de inicio de Amazon FSX para ONTAP de NetApp"^].
 
-El uso del conector en AWS tiene un coste adicional y los servicios de datos opcionales, como Cloud Sync y Data Sense.
+Hay un coste adicional asociado al uso del conector en AWS y a servicios de datos opcionales, como la copia y sincronización de BlueXP y la clasificación de BlueXP.
 
 
 
