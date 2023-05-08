@@ -65,6 +65,19 @@ Después de crear un volumen, es posible crear un nuevo volumen de lectura y esc
 
 
 
+== Gestione etiquetas de volumen
+
+Es posible añadir, modificar o eliminar etiquetas de volúmenes. Las etiquetas que se han añadido en BlueXP se reflejan en la consola de AWS. Puede tardar hasta una hora en sincronizar las etiquetas con la consola de AWS.
+
+.Pasos
+. Abra el entorno de trabajo.
+. Abra la ficha volumen y seleccione *gestionar volumen* para abrir el menú *acciones de volumen*.
+. Seleccione *Administrar etiquetas de volumen*.
+. Seleccione *Guardar* para aplicar los cambios.
+
+
+
+
 == Gestione copias Snapshot
 
 Las copias Snapshot proporcionan una copia puntual de su volumen. Cree copias de Snapshot y restaure los datos en un nuevo volumen.

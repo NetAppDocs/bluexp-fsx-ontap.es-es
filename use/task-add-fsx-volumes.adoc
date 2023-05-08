@@ -22,10 +22,10 @@ Después de configurar el entorno de trabajo, puede crear y montar FSX para los 
 
 Puede crear y gestionar volúmenes NFS, CIFS e iSCSI desde su entorno de trabajo FSX para ONTAP en BlueXP. Los volúmenes creados con la CLI de ONTAP también serán visibles en el entorno de trabajo FSX para ONTAP.
 
-.Lo que necesitará
-* Un activo https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Conector en AWS"^].
-* Si desea utilizar SMB, debe haber configurado DNS y Active Directory. Para obtener más información sobre la configuración de red DNS y Active Directory, consulte link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/self-manage-prereqs.html["AWS: Requisitos previos para usar un Microsoft AD autogestionado"^].
+.Antes de empezar
+Antes de crear un nuevo volumen, necesitarás un activo https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Conector en AWS"^].
 
+Si desea utilizar SMB, debe haber configurado DNS y Active Directory. Para obtener más información sobre la configuración de red DNS y Active Directory, consulte link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/self-manage-prereqs.html["AWS: Requisitos previos para usar un Microsoft AD autogestionado"^].
 
 .Acerca de esta tarea
 Puede añadir volúmenes abriendo el entorno de trabajo y seleccionando la ficha *volúmenes* o simplemente utilizando el panel entorno de trabajo *Detalles* del lienzo. En esta tarea se describe cómo agregar volúmenes mediante el panel *Detalles*.
@@ -36,12 +36,13 @@ Puede añadir volúmenes abriendo el entorno de trabajo y seleccionando la ficha
 +
 image:screenshot-add-volume.png["Captura de pantalla de la opción Add volume del panel Detalles."]
 
-. *Detalles del volumen y Protección*
+. *Detalles de volumen, protección y etiquetas*
 +
 .. Escriba un nombre para el volumen nuevo.
-.. Los campos de máquina virtual de almacenamiento (SVM) rellena automáticamente la SVM en función del nombre del entorno de trabajo.
+.. El campo Storage VM (SVM) rellena automáticamente la SVM en función del nombre del entorno de trabajo.
 .. Introduzca el tamaño del volumen y seleccione una unidad (GIB o TIB). Tenga en cuenta que el tamaño del volumen crecerá con el uso.
 .. Seleccione una política de Snapshot. De forma predeterminada, se realiza una copia de Snapshot cada hora (manteniendo las últimas seis copias), cada día (manteniendo las dos últimas copias) y cada semana (manteniendo las dos últimas copias).
+.. Opcionalmente, puede crear etiquetas para categorizar los volúmenes haciendo clic en el signo más e introduciendo un nombre y un valor de etiqueta.
 
 
 . *Protocolo de volúmenes*:

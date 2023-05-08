@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: use/task-creating-fsx-working-environment.html 
-keywords: Amazon FSx for NetApp ONTAP, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones, discover, storage capacity, iops, throughput 
+keywords: Amazon FSx for NetApp ONTAP, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones, discover, storage capacity, iops, throughput, security group, security 
 summary: Con BlueXP puede crear o descubrir entornos de trabajo FSX para ONTAP para agregar y gestionar volúmenes y servicios de datos adicionales. 
 ---
 = Cree o descubra un entorno de trabajo de Amazon FSX para ONTAP de NetApp
@@ -22,7 +22,7 @@ Con BlueXP puede crear o descubrir un entorno de trabajo FSX para ONTAP para agr
 
 El primer paso es crear un entorno de trabajo FSX para ONTAP. Si ya ha creado un FSX para el sistema de archivos ONTAP en la consola de gestión de AWS, puede link:task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system["Descúbralo mediante BlueXP"].
 
-.Lo que necesitará
+.Antes de empezar
 Antes de crear su entorno de trabajo FSX para ONTAP en BlueXP, necesitará:
 
 * El ARN de una función IAM que proporciona a BlueXP los permisos necesarios para crear un entorno de trabajo FSX para ONTAP. Consulte link:../requirements/task-setting-up-permissions-fsx.html["Adición de credenciales de AWS a BlueXP"] para obtener más detalles.
@@ -43,18 +43,20 @@ image:screenshot_add_fsx_working_env.png["Una captura de pantalla de la adición
 . *Detalles y credenciales*
 +
 .. Introduzca el nombre del entorno de trabajo que desee utilizar.
-.. De forma opcional, puede crear etiquetas haciendo clic en el signo más e introduciendo un nombre y un valor de etiqueta.
+.. Opcionalmente, puede crear etiquetas para categorizar su entorno de trabajo haciendo clic en el signo más e introduciendo un nombre y un valor de etiqueta.
 .. Introduzca y confirme la contraseña del clúster de ONTAP que desea utilizar.
 .. De manera opcional, anule la selección de la opción para usar la misma contraseña para el usuario de SVM y establecer una contraseña diferente.
 
 
-. *Región y VPC*
+. *Modelo de implementación HA*
 +
 .. Seleccione un modelo de despliegue de alta disponibilidad *Zona de disponibilidad única* o *zonas de disponibilidad múltiple*. En el caso de varias zonas de disponibilidad, seleccione subredes en al menos dos zonas de disponibilidad, de manera que cada nodo esté en una zona de disponibilidad dedicada.
+.. Seleccione la nube privada virtual (VPC) que desea asociar al sistema de archivos.
+.. Utilice un grupo de seguridad existente o seleccione *Grupo de seguridad generado* para permitir que BlueXP genere un grupo de seguridad que permita el tráfico solo dentro de la VPC seleccionada.
 +
-image:screenshot_add_fsx_region.png["Una captura de pantalla de cómo agregar una región y VPC para FSX para ONTAP"]
 
-.. Acepte el grupo de seguridad predeterminado o seleccione uno diferente. link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["Grupos de seguridad de AWS"^] controlar el tráfico entrante y saliente. Los configura el administrador de AWS y están asociados con su link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["Interfaz de red elástica de AWS (ENI)"^].
+NOTE: link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["Grupos de seguridad de AWS"^] controlar el tráfico entrante y saliente. Los configura el administrador de AWS y están asociados con su link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["Interfaz de red elástica de AWS (ENI)"^].
+
 
 
 . *IP flotante* (sólo zonas de disponibilidad múltiple)
@@ -73,9 +75,6 @@ Acepte la clave maestra predeterminada de AWS o haga clic en *Cambiar clave* par
 +
 .. Seleccione el rendimiento, la capacidad y la unidad. Es posible cambiar el rendimiento, la capacidad de almacenamiento y las IOPS en cualquier momento.
 .. Puede especificar un valor de IOPS de forma opcional. Si no especifica un valor de IOPS, BlueXP establecerá un valor predeterminado basado en 3 IOPS por GIB de la capacidad total introducida. Por ejemplo, si introduce 2000 GIB para la capacidad total y no hay valor para IOPS, el valor de IOPS efectivo se establecerá en 6000. Puede cambiar el valor de IOPS en cualquier momento.
-+
-image:screenshot-storage-config.png["Una captura de pantalla de cómo establecer la configuración de almacenamiento para FSX para ONTAP"]
-
 +
 
 NOTE: Si especifica un valor de IOPS que no cumple los requisitos mínimos, recibirá un error al agregar el entorno de trabajo.

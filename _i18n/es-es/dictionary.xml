@@ -12,17 +12,12 @@
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">Pasos</block>
   <block id="ecda29eb0e0827e3bc560f177dcde537" category="list-text">Si ya tiene una función IAM en su cuenta con los permisos de AWS correctos para FSX para ONTAP, selecciónela en el menú desplegable.</block>
   <block id="620a619e5abf90904f8bd9148673563f" category="list-text">Introduzca el nombre del entorno de trabajo que desee utilizar.</block>
-  <block id="d99cba7d7f71be21b06a8ed7b3cead82" category="list-text">De forma opcional, puede crear etiquetas haciendo clic en el signo más e introduciendo un nombre y un valor de etiqueta.</block>
   <block id="be5962a1bf7a843353b57734848a4297" category="list-text">Introduzca y confirme la contraseña del clúster de ONTAP que desea utilizar.</block>
-  <block id="02b7327efc840726659c50bf482440ba" category="inline-image-macro">Una captura de pantalla de cómo agregar una región y VPC para FSX para ONTAP</block>
-  <block id="e856b8b85c22d45ac9df09b76538baf0" category="paragraph"><block ref="e856b8b85c22d45ac9df09b76538baf0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d234e32cc579256f2dc2b1c0f46bf8ed" category="inline-link-macro">Grupos de seguridad de AWS</block>
   <block id="c0a56d37b9a744bb980fb63714ff853a" category="inline-link-macro">Interfaz de red elástica de AWS (ENI)</block>
-  <block id="70f807aec183b4123fd9e27691b549ae" category="list-text">Acepte el grupo de seguridad predeterminado o seleccione uno diferente. <block ref="35ef09e7b222c17f67a4a66af73d7196" category="inline-link-macro-rx"></block> controlar el tráfico entrante y saliente. Los configura el administrador de AWS y están asociados con su <block ref="122c50f10f9ced3dc765944ec92b3531" category="inline-link-macro-rx"></block>.</block>
   <block id="8acea1c4fcca87631ca127e2bc757f13" category="inline-link">Puerta de enlace de tránsito de AWS</block>
   <block id="e9993ec838a8efa5cfb29506f884deca" category="inline-link">Configuración de AWS KMS</block>
   <block id="c43f98768b6bade26ae94ab84f81134f" category="list-text">Puede especificar un valor de IOPS de forma opcional. Si no especifica un valor de IOPS, BlueXP establecerá un valor predeterminado basado en 3 IOPS por GIB de la capacidad total introducida. Por ejemplo, si introduce 2000 GIB para la capacidad total y no hay valor para IOPS, el valor de IOPS efectivo se establecerá en 6000. Puede cambiar el valor de IOPS en cualquier momento.</block>
-  <block id="8088a4fa7d414a887d0eb3f19623bc06" category="inline-image-macro">Una captura de pantalla de cómo establecer la configuración de almacenamiento para FSX para ONTAP</block>
   <block id="0308fb9d7cca24bdc3f9928245f79119" category="list-text">Haga clic en las pestañas para revisar las propiedades de ONTAP, las propiedades del proveedor y la configuración de red.</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">Resultado</block>
   <block id="e69624fa729e14e6bbcae0cf7889e100" category="section-title">Descubra un FSX existente para el sistema de archivos ONTAP</block>
@@ -87,11 +82,9 @@
   <block id="d950ccfec30779e51b9fd6a8aecbb558" category="paragraph">Después de configurar el entorno de trabajo, puede crear y montar FSX para los volúmenes de ONTAP.</block>
   <block id="1c27e11c5e65b93611e6f5ce640f8184" category="section-title">Cree volúmenes</block>
   <block id="0f845867deaf035383ffc217279b9c7f" category="paragraph">Puede crear y gestionar volúmenes NFS, CIFS e iSCSI desde su entorno de trabajo FSX para ONTAP en BlueXP. Los volúmenes creados con la CLI de ONTAP también serán visibles en el entorno de trabajo FSX para ONTAP.</block>
-  <block id="2aeb3bf14f4c88c233b9054f0d5f9f46" category="list-text">Un activo<block ref="f8ec938ce1f3506a828c9f7802c63902" category="inline-link-rx"></block>.</block>
   <block id="5465e73e9a93dbf3732ca4677b294afe" category="inline-link-macro">AWS: Requisitos previos para usar un Microsoft AD autogestionado</block>
   <block id="9e9d8417e8c186ec6d679c589ea0e388" category="list-text">Si desea utilizar SMB, debe haber configurado DNS y Active Directory. Para obtener más información sobre la configuración de red DNS y Active Directory, consulte <block ref="d929f7299259db2194621c6c3cd97ea7" category="inline-link-macro-rx"></block>.</block>
   <block id="2165a478df3c7cdbb020957742f7a396" category="list-text">Escriba un nombre para el volumen nuevo.</block>
-  <block id="8a7a21842c95be5ef7cf8fb45e457fbb" category="list-text">Los campos de máquina virtual de almacenamiento (SVM) rellena automáticamente la SVM en función del nombre del entorno de trabajo.</block>
   <block id="09d72555d9ef793670cfd52c3b29a5a9" category="list-text">Introduzca el tamaño del volumen y seleccione una unidad (GIB o TIB). Tenga en cuenta que el tamaño del volumen crecerá con el uso.</block>
   <block id="67cab8c7d29423fd822eaba3b1d1ad3e" category="list-text">Seleccione una política de Snapshot. De forma predeterminada, se realiza una copia de Snapshot cada hora (manteniendo las últimas seis copias), cada día (manteniendo las dos últimas copias) y cada semana (manteniendo las dos últimas copias).</block>
   <block id="2f13041935e5c3174ee293d608dc78fb" category="list-text">Seleccione una política de control de acceso.</block>
@@ -334,9 +327,7 @@
   <block id="c29858d9450fbef0a082acaa54d1bc6d" category="list-text">Seleccione *otra cuenta de AWS* e introduzca el ID de BlueXP.</block>
   <block id="edcfddcfff54621c47b01eddd968a5b0" category="list-text">Para BlueXP SaaS: 952013314444</block>
   <block id="319c3fdfa37c6b0ae4e91a351706489b" category="list-text">Para AWS GovCloud (EE. UU.): 033442085313</block>
-  <block id="30c558b7179a7e55ad7f3ae5ca262466" category="list-text">Cree una directiva que incluya los siguientes permisos:</block>
   <block id="f99ecd5cff9b18879fcd5ee404af256f" category="inline-link-macro">gestión de la capacidad automática</block>
-  <block id="6ba425a78c17896d93d28f52eaadb6f2" category="admonition"><block ref="350df107c59fa79663916b7955bbe306" prefix="" category="inline-code"></block> y..<block ref="db68eaa323cf27d3f429647b32e5d91b" prefix=" " category="inline-code"></block> se requieren para habilitar <block ref="1cea652ab03a953c6704c3bb96fcb9b7" category="inline-link-macro-rx"></block>.</block>
   <block id="fa9df323148192800073dd2a78c81f73" category="list-text">Copie el rol ARN de la función IAM para que pueda pegarlo en BlueXP en el siguiente paso.</block>
   <block id="d47c23803528fa45fad33a3f83dfcf54" category="paragraph">El rol IAM ahora tiene los permisos necesarios.</block>
   <block id="36bc52aaebad43ec3e49ed9a0efacd43" category="section-title">Añada las credenciales</block>
@@ -586,12 +577,10 @@
   <block id="bff0ab4dab26d38051ade7a231a2a6f2" category="sidebar">Obtenga más información sobre FSX para ONTAP</block>
   <block id="6faf2fd9ba5b0e89a953f43cd89d6c46" category="sidebar">Gestionar un entorno de trabajo</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Toda la documentación de BlueXP</block>
-  <block id="d59db7846bd10b6d60d21543df9faa9e" category="paragraph-title">Lo que necesitará</block>
   <block id="bc1fbeca04a0bc47b1dd85e467f87ffc" category="list-text">*FSX para la autenticación ONTAP*</block>
   <block id="2bc897b30b2df26c531635a145af68ae" category="list-text">Si no tiene ningún rol de IAM en su cuenta, haga clic en *credenciales* y siga los pasos del asistente para agregar un ARN para un rol de AWS IAM con credenciales de FSX para ONTAP. Consulte <block ref="1bf7f389ad2ba65976eab24c818e174c" category="inline-link-macro-rx"></block> para obtener más detalles.</block>
   <block id="acffd96d264a8bd18e75d6d6ce0aac12" category="list-text">*Detalles y credenciales*</block>
   <block id="b3decd3dc6245a45a816d81cc94eb4be" category="list-text">De manera opcional, anule la selección de la opción para usar la misma contraseña para el usuario de SVM y establecer una contraseña diferente.</block>
-  <block id="f0b48aa240ffb99007210ba5d55e0fd3" category="list-text">*Región y VPC*</block>
   <block id="15ef2ed90c27f9867f7383d8f200ba6b" category="list-text">Seleccione un modelo de despliegue de alta disponibilidad *Zona de disponibilidad única* o *zonas de disponibilidad múltiple*. En el caso de varias zonas de disponibilidad, seleccione subredes en al menos dos zonas de disponibilidad, de manera que cada nodo esté en una zona de disponibilidad dedicada.</block>
   <block id="3f589588a5e2b50cf827ef7f979de432" category="list-text">*IP flotante* (sólo zonas de disponibilidad múltiple)</block>
   <block id="5b1a0e567c07875980cb98cbf8a0fc60" category="paragraph">Deje _CIDR Range_ vacío para establecer automáticamente un rango disponible. Opcionalmente, puede utilizar<block ref="ca64804883d6ae6ee4c5f1f5610fe766" category="inline-link-rx"></block> para configurar manualmente un rango.</block>
@@ -600,7 +589,6 @@
   <block id="a150e060bd138eb9dd07f260966de37f" category="list-text">*Cifrado de datos*</block>
   <block id="a1ab9258bbeb31ecc1e35b1adc9465dc" category="list-text">*Configuración de almacenamiento*</block>
   <block id="e38fe475552b433630789034542b28de" category="list-text">Seleccione el rendimiento, la capacidad y la unidad. Es posible cambiar el rendimiento, la capacidad de almacenamiento y las IOPS en cualquier momento.</block>
-  <block id="704b454e0a67ad9d30229aad055c4456" category="paragraph"><block ref="704b454e0a67ad9d30229aad055c4456" category="inline-image-macro-rx" type="image"></block></block>
   <block id="966c244dc2aee9efc1c62796b0ab5cc8" category="admonition">Si especifica un valor de IOPS que no cumple los requisitos mínimos, recibirá un error al agregar el entorno de trabajo.</block>
   <block id="12799e1af0745585e0f5800e7ab5ac0d" category="list-text">*Revisión*</block>
   <block id="a434ec7166240525e1136a9caf043a5e" category="list-text">Haga clic en *anterior* para realizar cambios en cualquier configuración o en *Agregar* para aceptar la configuración y crear su entorno de trabajo.</block>
@@ -619,7 +607,6 @@
   <block id="ada6c4a93e7b96d58f35712af7225f16" category="list-text">En el panel *Detalles*, utilice los tres puntos (<block ref="4d658ec40ed039406a8a891871de0f3d" category="inline-image-macro-rx" type="image"></block>) para abrir el menú de opciones. Haga clic en *Añadir volumen*.</block>
   <block id="cb29a37b5b733fa09b9f5235c1a2f7e1" category="inline-image-macro">Captura de pantalla de la opción Add volume del panel Detalles.</block>
   <block id="08d8ba93d0c829ce154f2f67f8a7a548" category="paragraph"><block ref="08d8ba93d0c829ce154f2f67f8a7a548" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="76e8c4dc9b4691280948a11959dd6d53" category="list-text">*Detalles del volumen y Protección*</block>
   <block id="0e71045ffb2c142e38f192348939d657" category="list-text">*Protocolo de volúmenes*:</block>
   <block id="763a3be303d8f075b28b4fb47257840f" category="list-text">Seleccione un protocolo de volumen NFS, CIFS o iSCSI.</block>
   <block id="1d1a594959ec615f56516f5d0f5e8ddb" category="open-title">NFS</block>
@@ -714,14 +701,7 @@
   <block id="7aa1575aeeddba65d55707b41584cd4a" category="sidebar">Utilice Amazon FSX para ONTAP de NetApp</block>
   <block id="c82c15e6d66564201da1f424b2fb9bf4" category="sidebar">Documentos de Amazon FSX para ONTAP de NetApp</block>
   <block id="a3ef479db7087d8c91c8e7225a427426" category="list-text">Si selecciona *Automatic* IOPS, mantiene una relación de tres IOPS de SSD aprovisionadas por GIB de almacenamiento primario hasta 160,000. No puede aprovisionar manualmente un valor de IOPS superior a 160,000.</block>
-  <block id="ee7de532c8affb3659d9d80ec396fef5" category="list-text">De manera opcional, seleccione la opción optimización para crear una FlexGroup y distribuir datos de volúmenes en el clúster.</block>
-  <block id="d22ff9012fce506ed1f2c7ba6e00a0e6" category="admonition">La distribución FlexGroup solo está disponible para protocolos de volúmenes NFS y CIFS.</block>
-  <block id="953d80d6f5efbc162c05017004c6791a" category="list-text">Si seleccionó Optimization (FlexGroup), debe especificar el número de componentes a los que se deben distribuir los datos de volúmenes en. Se recomienda encarecidamente utilizar un número par de componentes para garantizar una distribución uniforme de los datos. La mejor práctica son 8 componentes.</block>
-  <block id="2447632b449c054d670473aa08500256" category="inline-image-macro">Captura de pantalla del campo para especificar el número de componentes a los que se deben distribuir los datos del volumen.</block>
-  <block id="e8a33687845a8222ff0797ef7fa10d6a" category="paragraph"><block ref="e8a33687845a8222ff0797ef7fa10d6a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="88c49608e723add593f5becc8bd9a968" category="section-title">02 de abril de 2023</block>
-  <block id="cabf1912632a0d24145c02f00dc7d6b2" category="inline-link-macro">Cree un FlexGroup en FSX para ONTAP</block>
-  <block id="9a2a26c33c1a0f6b14b7bb3a214dbaf0" category="list-text">Ahora puede hacerlo <block ref="5e895283a25d01b135da63bdfcfdf72e" category="inline-link-macro-rx"></block> volúmenes para distribuir datos de volúmenes en el clúster.</block>
   <block id="9af9b754c1d16f271c1e6f4b1b2c4f4d" category="list-text">El límite de IOPS se aumenta para permitir el aprovisionamiento manual o automático hasta 160,000.</block>
   <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*Accesorio (opcional)*: Cargue hasta cinco archivos adjuntos, uno a la vez.</block>
   <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">Los archivos adjuntos están limitados a 25 MB por archivo. Se admiten las siguientes extensiones de archivo: Txt, log, pdf, jpg/jpeg, rtf, doc/docx, xls/xlsx y csv.</block>
@@ -741,4 +721,32 @@
   <block id="4cc849f381058f76f6b72a1c4279393d" category="cell">Clasificación de BlueXP</block>
   <block id="a7f8c8869966601b4670aae0a070ba31" category="cell">Clasificación de BlueXP para Cloud Volumes ONTAP</block>
   <block id="a13fe54147eef01f0ae918612d6a4216" category="paragraph">Puedes crear relaciones de sincronización mediante la copia y sincronización de BlueXP. Para configurar las relaciones de sincronización, consulte<block ref="3bb02b9d4fba268ff940f67f5abfe3eb" category="inline-link-rx"></block>.</block>
+  <block id="d151342d67a639e871ca8c57524ca7f8" category="section-title">Gestione etiquetas de volumen</block>
+  <block id="1edd4a3142e92621938f60a5002ee3b3" category="paragraph">Es posible añadir, modificar o eliminar etiquetas de volúmenes. Las etiquetas que se han añadido en BlueXP se reflejan en la consola de AWS. Puede tardar hasta una hora en sincronizar las etiquetas con la consola de AWS.</block>
+  <block id="4c01e02944d90f20b1f75ee4b1e9c16c" category="list-text">Seleccione *Administrar etiquetas de volumen*.</block>
+  <block id="030c2a7dd0a2a850c39eb85018a90937" category="list-text">Seleccione *Guardar* para aplicar los cambios.</block>
+  <block id="683e9ad715450e3853ea313118022403" category="paragraph">Antes de crear un nuevo volumen, necesitarás un activo<block ref="f8ec938ce1f3506a828c9f7802c63902" category="inline-link-rx"></block>.</block>
+  <block id="4cf58ab90a8b9b744f512ffebcdbebb3" category="list-text">*Detalles de volumen, protección y etiquetas*</block>
+  <block id="7862905bf13e1d709d0da68a16f6b48a" category="list-text">El campo Storage VM (SVM) rellena automáticamente la SVM en función del nombre del entorno de trabajo.</block>
+  <block id="bf3b5a85e403c1246dbbd111a2122f1b" category="list-text">Opcionalmente, puede crear etiquetas para categorizar los volúmenes haciendo clic en el signo más e introduciendo un nombre y un valor de etiqueta.</block>
+  <block id="217b3256c0d162e3d3a19443f01ca898" category="list-text">Opcionalmente, puede crear etiquetas para categorizar su entorno de trabajo haciendo clic en el signo más e introduciendo un nombre y un valor de etiqueta.</block>
+  <block id="abe6a897030218d3203ab879ad4b1f44" category="list-text">*Modelo de implementación HA*</block>
+  <block id="5af4897c305da61f596431c2c0127080" category="list-text">Seleccione la nube privada virtual (VPC) que desea asociar al sistema de archivos.</block>
+  <block id="2cbc2dc6a7e20b95c33bc032c1eaad70" category="list-text">Utilice un grupo de seguridad existente o seleccione *Grupo de seguridad generado* para permitir que BlueXP genere un grupo de seguridad que permita el tráfico solo dentro de la VPC seleccionada.</block>
+  <block id="58276d4f4738c8093a6fcfa10c2aa220" category="admonition"><block ref="35ef09e7b222c17f67a4a66af73d7196" category="inline-link-macro-rx"></block> controlar el tráfico entrante y saliente. Los configura el administrador de AWS y están asociados con su <block ref="122c50f10f9ced3dc765944ec92b3531" category="inline-link-macro-rx"></block>.</block>
+  <block id="a018fc35c6be59c0e9c90d4bd464dc47" category="section-title">07 de mayo de 2023</block>
+  <block id="b3aad9775f9ce61fe67c9745594b96f0" category="inline-link-macro">generar un grupo de seguridad</block>
+  <block id="beee5e54063eb4d710db752896c928c8" category="inline-link-macro">requiere permisos adicionales</block>
+  <block id="85613cc2934a1e3d40c91656c94e331a" category="list-text">Al crear un entorno de trabajo, ahora puedes tener BlueXP <block ref="c4e69423da06cd62564882d11bcec12a" category="inline-link-macro-rx"></block> Esto permite el tráfico dentro de la VPC seleccionada solamente. Esta función <block ref="55b057d10246173e2440d2eae51abd9a" category="inline-link-macro-rx"></block>.</block>
+  <block id="34ec78fcc91ffb1e54cd85e4a0924332" category="inline-link-macro">agregar</block>
+  <block id="8f45a2644508b5282f57fe129f62d19a" category="inline-link-macro">modificar</block>
+  <block id="158f074c96189eb946118a12a17762b5" category="list-text">Usted puede opcionalmente <block ref="09047edca5075ad1c71cf5035a98ddf9" category="inline-link-macro-rx"></block> y.. <block ref="d0baf23f6aa987908b3cb85b94241056" category="inline-link-macro-rx"></block> etiquetas para categorizar volúmenes.</block>
+  <block id="4671b76d583d3e68a446878a3342d736" category="list-text">Cree una política que incluya los siguientes permisos mínimos requeridos y los permisos opcionales, según sea necesario.</block>
+  <block id="5ad10cfb674234136c181d096cb59522" category="open-title">Permisos necesarios</block>
+  <block id="7b36ef7355ac702b97a1f4f36816d08c" category="paragraph">Se necesitan los siguientes permisos mínimos para permitir que BlueXP cree tu sistema de archivos FSx para ONTAP de NetApp.</block>
+  <block id="79d6201c496cf246a16e25b2e725897a" category="open-title">Capacidad automática</block>
+  <block id="762e3bf022059ba9b9cc06c0d2c9b00d" category="paragraph">Los siguientes permisos adicionales son necesarios para habilitarlos <block ref="4d6056f5ae867fac15604e7d63efb082" category="inline-link-macro-rx"></block>.</block>
+  <block id="9175bb34d0aede26315b313b9432bcbb" category="open-title">Grupos de seguridad</block>
+  <block id="42c16fd45375c160089e29d754f16e36" category="inline-link-macro">generar grupos de seguridad</block>
+  <block id="78004ed8e8658d85d8a3d99a1a533922" category="paragraph">Se necesitan los siguientes permisos adicionales para permitir que BlueXP lo haga <block ref="37425afe2ceb1de25205a180b5a14074" category="inline-link-macro-rx"></block>.</block>
 </blocks>

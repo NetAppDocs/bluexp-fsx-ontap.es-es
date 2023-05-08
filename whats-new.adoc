@@ -18,6 +18,14 @@ Descubra las novedades de Amazon FSX para ONTAP de NetApp.
 
 
 
+== 07 de mayo de 2023
+
+* Al crear un entorno de trabajo, ahora puedes tener BlueXP link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["generar un grupo de seguridad"^] Esto permite el tráfico dentro de la VPC seleccionada solamente. Esta función link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["requiere permisos adicionales"^].
+* Usted puede opcionalmente link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#create-volumes["agregar"^] y.. link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#manage-volume-tags["modificar"^] etiquetas para categorizar volúmenes.
+
+
+
+
 == 02 de abril de 2023
 
 El límite de IOPS se aumenta para permitir el aprovisionamiento manual o automático hasta 160,000.
