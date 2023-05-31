@@ -142,6 +142,6 @@ Ahora puede utilizar las credenciales al crear un entorno de trabajo FSX para ON
 
 == Enlaces relacionados
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-accounts-aws.html["Credenciales y permisos de AWS"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html["Gestión de credenciales de AWS para BlueXP"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-accounts-aws.html["Credenciales y permisos de AWS"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["Gestión de credenciales de AWS para BlueXP"^]
 
