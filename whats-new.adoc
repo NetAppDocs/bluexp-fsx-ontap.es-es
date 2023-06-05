@@ -18,6 +18,14 @@ Descubra las novedades de Amazon FSX para ONTAP de NetApp.
 
 
 
+== 04 de junio de 2023
+
+* Cuando link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["crear un entorno de trabajo"], puede especificar la hora de inicio de la ventana de mantenimiento semanal de 30 minutos para asegurarse de que el mantenimiento no entra en conflicto con las actividades empresariales críticas.
+* Cuando link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html["creación de un volumen"], Puede habilitar la optimización de datos mediante la creación de una FlexGroup para distribuir datos entre volúmenes.
+
+
+
+
 == 07 de mayo de 2023
 
 * Al crear un entorno de trabajo, ahora puedes tener BlueXP link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["generar un grupo de seguridad"^] Esto permite el tráfico dentro de la VPC seleccionada solamente. Esta función link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["requiere permisos adicionales"^].

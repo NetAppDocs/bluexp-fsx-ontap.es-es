@@ -569,7 +569,6 @@
   <block id="ada6c4a93e7b96d58f35712af7225f16" category="list-text">En el panel *Detalles*, utilice los tres puntos (<block ref="4d658ec40ed039406a8a891871de0f3d" category="inline-image-macro-rx" type="image"></block>) para abrir el menú de opciones. Haga clic en *Añadir volumen*.</block>
   <block id="cb29a37b5b733fa09b9f5235c1a2f7e1" category="inline-image-macro">Captura de pantalla de la opción Add volume del panel Detalles.</block>
   <block id="08d8ba93d0c829ce154f2f67f8a7a548" category="paragraph"><block ref="08d8ba93d0c829ce154f2f67f8a7a548" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0e71045ffb2c142e38f192348939d657" category="list-text">*Protocolo de volúmenes*:</block>
   <block id="763a3be303d8f075b28b4fb47257840f" category="list-text">Seleccione un protocolo de volumen NFS, CIFS o iSCSI.</block>
   <block id="1d1a594959ec615f56516f5d0f5e8ddb" category="open-title">NFS</block>
   <block id="c6546b53840ec8245dd4d4d70fcdbc26" category="open-title">CIFS</block>
@@ -673,8 +672,6 @@
   <block id="030c2a7dd0a2a850c39eb85018a90937" category="list-text">Seleccione *Guardar* para aplicar los cambios.</block>
   <block id="4cf58ab90a8b9b744f512ffebcdbebb3" category="list-text">*Detalles de volumen, protección y etiquetas*</block>
   <block id="7862905bf13e1d709d0da68a16f6b48a" category="list-text">El campo Storage VM (SVM) rellena automáticamente la SVM en función del nombre del entorno de trabajo.</block>
-  <block id="bf3b5a85e403c1246dbbd111a2122f1b" category="list-text">Opcionalmente, puede crear etiquetas para categorizar los volúmenes haciendo clic en el signo más e introduciendo un nombre y un valor de etiqueta.</block>
-  <block id="217b3256c0d162e3d3a19443f01ca898" category="list-text">Opcionalmente, puede crear etiquetas para categorizar su entorno de trabajo haciendo clic en el signo más e introduciendo un nombre y un valor de etiqueta.</block>
   <block id="abe6a897030218d3203ab879ad4b1f44" category="list-text">*Modelo de implementación HA*</block>
   <block id="5af4897c305da61f596431c2c0127080" category="list-text">Seleccione la nube privada virtual (VPC) que desea asociar al sistema de archivos.</block>
   <block id="2cbc2dc6a7e20b95c33bc032c1eaad70" category="list-text">Utilice un grupo de seguridad existente o seleccione *Grupo de seguridad generado* para permitir que BlueXP genere un grupo de seguridad que permita el tráfico solo dentro de la VPC seleccionada.</block>
@@ -719,7 +716,6 @@
   <block id="4a0c58afa0cf8e6e215c2321f73e0970" category="paragraph">Para problemas relacionados con soporte técnico específicos de soluciones y servicios de almacenamiento de BlueXP o BlueXP, puedes abrir un ticket de soporte de NetApp mediante el número de serie de tu cuenta de BlueXP. Tendrá que hacerlo <block ref="0c02d88e10dc9d33a3c6d90fb8336a90" category="inline-link-macro-rx"></block> para activar el soporte.</block>
   <block id="52f0d52ceec121b410112b2a5dba2d7a" category="paragraph">Uso <block ref="22fc26cf6eb0c7b721364c48d2d0a99b" category="inline-link-macro-rx"></block>, Usted puede comenzar con FSX para ONTAP en sólo unos pasos.</block>
   <block id="c252661fa67fb818de00d332271e5952" category="paragraph">Debe tener un<block ref="752bdc7b6cc8b206a39bceaddedfafff" category="inline-link-rx"></block> Para abrir el entorno de trabajo de FSX para ONTAP, cree volúmenes o realice otras acciones. Cuando se necesita un conector, BlueXP le preguntará si no está activo.</block>
-  <block id="f8073e9488e1efc9a72bfd8549bdfe65" category="paragraph">Deje _CIDR Range_ vacío para establecer automáticamente un rango disponible. Opcionalmente, puede utilizar<block ref="908a038b6698bef05553dc237966486c" category="inline-link-rx"></block> para configurar manualmente un rango.</block>
   <block id="fed3b58ee53350fc679af9313a452f78" category="paragraph">Acepte la clave maestra predeterminada de AWS o haga clic en *Cambiar clave* para seleccionar una clave maestra de cliente de AWS (CMK) diferente. Para obtener más información sobre CMK, consulte <block ref="8fe12519351ca8a607a9a9e011c48c01" category="inline-link-macro-rx"></block>.</block>
   <block id="598ac5ec4509a5fa7d37ccc4259276e2" category="paragraph">Puede replicar datos entre entornos de almacenamiento con BlueXP. Para configurar FSX para la replicación de ONTAP, consulte<block ref="b3f9ef9ab8e2f6f80ef424579ec0a2be" category="inline-link-rx"></block>.</block>
   <block id="4fe2848eb7d4a0d2def783dfbceaf41d" category="paragraph">Puedes crear relaciones de sincronización mediante la copia y sincronización de BlueXP. Para configurar las relaciones de sincronización, consulte<block ref="ebda92a6c5428de5c74cf0458cae3b5e" category="inline-link-rx"></block>.</block>
@@ -746,4 +742,24 @@
   <block id="9392a234f812a64a7add82bf3ea440ce" category="paragraph"><block ref="6c403399a6912b636ecf2c35a037d6c1" category="inline-link-macro-rx"></block>.</block>
   <block id="6bc0d0afbcf301d393b1808f854ff30e" category="list-text"><block ref="6bc0d0afbcf301d393b1808f854ff30e" category="inline-link-rx"></block></block>
   <block id="8fb5f344898fe922856ca069cb615707" category="list-text"><block ref="8fb5f344898fe922856ca069cb615707" category="inline-link-rx"></block></block>
+  <block id="c6e3378b0ee3c7cdb21a4cfdf78d729e" category="list-text">Opcionalmente, cree etiquetas para categorizar los volúmenes haciendo clic en el signo más e introduciendo un nombre y un valor de etiqueta.</block>
+  <block id="ee7de532c8affb3659d9d80ec396fef5" category="list-text">De manera opcional, seleccione la opción optimización para crear una FlexGroup y distribuir datos de volúmenes en el clúster.</block>
+  <block id="cb7d4e165ee98c4ee16be7a24245f5bc" category="admonition">La distribución de FlexGroup solo está disponible para los protocolos de volúmenes NFS y CIFS.</block>
+  <block id="176d707d91233fad58f8673c1716a4f8" category="list-text">*Protocolo de volúmenes*:</block>
+  <block id="21f43446afbc4a1acbf88a421b7a09dc" category="list-text">Si seleccionó Optimization (FlexGroup), debe especificar el número de componentes a los que se deben distribuir los datos de volúmenes en. Se recomienda encarecidamente utilizar un número par de componentes para garantizar una distribución uniforme de los datos.</block>
+  <block id="d99cba7d7f71be21b06a8ed7b3cead82" category="list-text">De forma opcional, puede crear etiquetas haciendo clic en el signo más e introduciendo un nombre y un valor de etiqueta.</block>
+  <block id="c89439eb771335b64cacafd62be867f6" category="list-text">De manera opcional, puedes especificar la hora de inicio para que Amazon FSx for NetApp ONTAP realice un mantenimiento semanal de 30 minutos. Esto se puede utilizar para garantizar que el mantenimiento no coincida con las actividades críticas de negocio. Si selecciona *Sin preferencia*, se asignará una hora de inicio aleatoria. Puede cambiar esto en cualquier momento.</block>
+  <block id="5b1a0e567c07875980cb98cbf8a0fc60" category="paragraph">Deje _CIDR Range_ vacío para establecer automáticamente un rango disponible. Opcionalmente, puede utilizar<block ref="ca64804883d6ae6ee4c5f1f5610fe766" category="inline-link-rx"></block> para configurar manualmente un rango.</block>
+  <block id="deafe98ece55cac6734aa3e0c94f89a1" category="list-title">No se admiten IPS en los siguientes rangos:</block>
+  <block id="41744fea4be9d62829f8c470c2392ab1" category="list-text">0,0.0.0/8</block>
+  <block id="3e1fea8090ae1db8846841cc09d5aaf8" category="list-text">127,0.0.0/8</block>
+  <block id="848f6e8ee6fe43588f4416e654c34e48" category="list-text">198.19.0.0/20</block>
+  <block id="db9ba505138d8297c77f1ab14b6cdeec" category="list-text">224,0.0.0/4</block>
+  <block id="f4e8000f5b4b5143e798df0d90374b2a" category="list-text">240,0.0.0/4</block>
+  <block id="8ebeed61b9e364961ed847275d3138d4" category="list-text">255.255.255.255 PB/32</block>
+  <block id="a6aef5e3bbd8b059764f33a4044e30d6" category="section-title">04 de junio de 2023</block>
+  <block id="b11363dc7ad08609dacf71adabc1e3d7" category="inline-link-macro">crear un entorno de trabajo</block>
+  <block id="c21d5cf174dc36531d6990b13fe89573" category="list-text">Cuando <block ref="ad9408e39808bf9ea4b07fa95cac5798" category="inline-link-macro-rx"></block>, puede especificar la hora de inicio de la ventana de mantenimiento semanal de 30 minutos para asegurarse de que el mantenimiento no entra en conflicto con las actividades empresariales críticas.</block>
+  <block id="e2ba73f0e5661996e4350de09efee512" category="inline-link-macro">creación de un volumen</block>
+  <block id="fabdf5de30f7e7084ae6656930904d1d" category="list-text">Cuando <block ref="1bfb452ce23fdd4301ee99a62317a7a6" category="inline-link-macro-rx"></block>, Puede habilitar la optimización de datos mediante la creación de una FlexGroup para distribuir datos entre volúmenes.</block>
 </blocks>

@@ -43,7 +43,8 @@ image:screenshot_add_fsx_working_env.png["Una captura de pantalla de la adición
 . *Detalles y credenciales*
 +
 .. Introduzca el nombre del entorno de trabajo que desee utilizar.
-.. Opcionalmente, puede crear etiquetas para categorizar su entorno de trabajo haciendo clic en el signo más e introduciendo un nombre y un valor de etiqueta.
+.. De forma opcional, puede crear etiquetas haciendo clic en el signo más e introduciendo un nombre y un valor de etiqueta.
+.. De manera opcional, puedes especificar la hora de inicio para que Amazon FSx for NetApp ONTAP realice un mantenimiento semanal de 30 minutos. Esto se puede utilizar para garantizar que el mantenimiento no coincida con las actividades críticas de negocio. Si selecciona *Sin preferencia*, se asignará una hora de inicio aleatoria. Puede cambiar esto en cualquier momento.
 .. Introduzca y confirme la contraseña del clúster de ONTAP que desea utilizar.
 .. De manera opcional, anule la selección de la opción para usar la misma contraseña para el usuario de SVM y establecer una contraseña diferente.
 
@@ -61,8 +62,21 @@ NOTE: link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-ru
 
 . *IP flotante* (sólo zonas de disponibilidad múltiple)
 +
-Deje _CIDR Range_ vacío para establecer automáticamente un rango disponible. Opcionalmente, puede utilizar https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-setting-up-transit-gateway.html["Puerta de enlace de tránsito de AWS"^] para configurar manualmente un rango.
+Deje _CIDR Range_ vacío para establecer automáticamente un rango disponible. Opcionalmente, puede utilizar https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-setting-up-transit-gateway.html["Puerta de enlace de tránsito de AWS"^] para configurar manualmente un rango.
 
++
+[WARNING]
+====
+.No se admiten IPS en los siguientes rangos:
+** 0,0.0.0/8
+** 127,0.0.0/8
+** 198.19.0.0/20
+** 224,0.0.0/4
+** 240,0.0.0/4
+** 255.255.255.255 PB/32
+
+
+====
 . * Tablas de rutas* (sólo zonas de disponibilidad múltiple)
 +
 Seleccione tablas de rutas que incluyan rutas a las direcciones IP flotantes. Si sólo tiene una tabla de rutas para las subredes en el VPC (la tabla de rutas principal), BlueXP agrega automáticamente las direcciones IP flotantes a esa tabla de rutas.
