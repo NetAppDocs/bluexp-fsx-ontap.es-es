@@ -66,7 +66,7 @@ Se necesitan los siguientes permisos mínimos para permitir que BlueXP cree tu s
 --
 .Capacidad automática
 --
-Los siguientes permisos adicionales son necesarios para habilitarlos link:../use/task-manage-fsx-working-environment.html["gestión de la capacidad automática"].
+Los siguientes permisos adicionales son necesarios para habilitarlos link:../use/task-manage-working-environment.html["gestión de la capacidad automática"].
 
 [source, json]
 ----
