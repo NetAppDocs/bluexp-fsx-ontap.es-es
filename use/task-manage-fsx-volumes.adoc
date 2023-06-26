@@ -41,11 +41,6 @@ Después de crear un volumen, es posible modificarlo en cualquier momento.
 . Abra el entorno de trabajo.
 . Abra la ficha volumen y seleccione *gestionar volumen* para abrir el menú *acciones de volumen*.
 . Seleccione *Editar configuración de volumen*.
-+
-.. Para NFS, puede modificar el tamaño y las etiquetas.
-.. Para CIFS, puede modificar el nombre del recurso compartido, los usuarios, los permisos y la política de Snapshot según sea necesario.
-
-
 . Seleccione *aplicar*.
 
 
@@ -68,6 +63,9 @@ Después de crear un volumen, es posible crear un nuevo volumen de lectura y esc
 == Gestione etiquetas de volumen
 
 Es posible añadir, modificar o eliminar etiquetas de volúmenes. Las etiquetas que se han añadido en BlueXP se reflejan en la consola de AWS. Puede tardar hasta una hora en sincronizar las etiquetas con la consola de AWS.
+
+
+NOTE: No se pueden editar las etiquetas de volúmenes que haya creado en BlueXP hasta que se sincronicen con AWS. Esto puede llevar hasta una hora. Si la opción *Administrar etiquetas de volumen* está atenuada, AWS aún no ha sincronizado las etiquetas de volumen.
 
 .Pasos
 . Abra el entorno de trabajo.

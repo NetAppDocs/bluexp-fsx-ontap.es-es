@@ -141,8 +141,6 @@
   <block id="b29f6e00261f220f9ca9601a3dbc09df" category="section-title">Editar volúmenes</block>
   <block id="b609b522164fd601ccb14538b7074e4e" category="paragraph">Después de crear un volumen, es posible modificarlo en cualquier momento.</block>
   <block id="a324b09bde8b0186d3f43692b7556fd9" category="list-text">Seleccione *Editar configuración de volumen*.</block>
-  <block id="4ba141f8bd3c71509d32aaf3d8ae34d6" category="list-text">Para NFS, puede modificar el tamaño y las etiquetas.</block>
-  <block id="ad348a3307068da0d1c8c03655a0d11e" category="list-text">Para CIFS, puede modificar el nombre del recurso compartido, los usuarios, los permisos y la política de Snapshot según sea necesario.</block>
   <block id="fee2a02b904d6d1f207e959dbd807a75" category="section-title">Clonar volúmenes</block>
   <block id="6b94d8d9a10c7d18376b9f389dba9855" category="paragraph">Después de crear un volumen, es posible crear un nuevo volumen de lectura y escritura a partir de una nueva snapshot.</block>
   <block id="d64b993d52f8a267e9dfb902139ad672" category="list-text">Seleccione *Clonar el volumen*.</block>
@@ -763,4 +761,5 @@
   <block id="39f382b97080640c75604b5890f3a5d3" category="paragraph">La asociación de credenciales de NSS con su cuenta de BlueXP es diferente de la cuenta de NSS asociada con un inicio de sesión de usuario de BlueXP.</block>
   <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">Estas credenciales de NSS están asociadas con tu ID de cuenta de BlueXP específico. Los usuarios que pertenecen a la cuenta BlueXP pueden acceder a estas credenciales desde *Soporte &gt; Gestión NSS*.</block>
   <block id="69ca45f3f7552de8b10ae32cba3897d2" category="paragraph">Los siguientes permisos adicionales son necesarios para habilitarlos <block ref="1cea652ab03a953c6704c3bb96fcb9b7" category="inline-link-macro-rx"></block>.</block>
+  <block id="1a152437275e48cffd13b98c296a5e3f" category="admonition">No se pueden editar las etiquetas de volúmenes que haya creado en BlueXP hasta que se sincronicen con AWS. Esto puede llevar hasta una hora. Si la opción *Administrar etiquetas de volumen* está atenuada, AWS aún no ha sincronizado las etiquetas de volumen.</block>
 </blocks>
