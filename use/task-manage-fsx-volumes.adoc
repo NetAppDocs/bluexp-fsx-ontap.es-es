@@ -107,14 +107,6 @@ Cambie la política de organización en niveles del volumen.
 
 
 
-== Replicar y sincronizar datos
-
-Puede replicar datos entre entornos de almacenamiento con BlueXP. Para configurar FSX para la replicación de ONTAP, consulte https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["replicación de datos entre sistemas"^].
-
-Puedes crear relaciones de sincronización mediante la copia y sincronización de BlueXP. Para configurar las relaciones de sincronización, consulte https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html["creación de relaciones de sincronización"^].
-
-
-
 == Elimine volúmenes
 
 Elimine los volúmenes que ya no necesita.

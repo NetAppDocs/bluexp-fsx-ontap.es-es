@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: use/task-manage-working-environment.html 
-keywords: amazon fsx for netapp ontap, fsx, manage working environment, delete working environment, remove working environment, throughput capacity, change throughput, automatic capacity management, capacity management, storage capacity 
-summary: BlueXP le permite gestionar su entorno de trabajo FSX para ONTAP. Es posible habilitar la gestión automática de la capacidad, modificar el rendimiento y la capacidad de almacenamiento, e IOPS, y eliminar o eliminar el entorno de trabajo. 
+keywords: amazon fsx for netapp ontap, fsx, manage working environment, delete working environment, remove working environment, throughput capacity, change throughput, automatic capacity management, capacity management, storage capacity, replication, classification, sync, backup, recovery 
+summary: BlueXP le permite gestionar su entorno de trabajo FSX para ONTAP. Puede habilitar la gestión automática de la capacidad, cambiar el rendimiento y la capacidad de almacenamiento e IOPS, eliminar o eliminar el entorno de trabajo y gestionar servicios de datos como backup y recuperación, copia y sincronización, clasificación, replicación y almacenamiento en caché de volúmenes. 
 ---
 = Gestione un entorno de trabajo de Amazon FSX para ONTAP de NetApp
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: BlueXP le permite gestionar su entorno de trabajo FSX para ONTAP. Es po
 
 
 [role="lead"]
-BlueXP le permite gestionar su entorno de trabajo FSX para ONTAP. Es posible habilitar la gestión automática de la capacidad, modificar el rendimiento y la capacidad de almacenamiento, e IOPS, y eliminar o eliminar el entorno de trabajo.
+BlueXP le permite gestionar su entorno de trabajo FSX para ONTAP. Puede habilitar la gestión automática de la capacidad, cambiar el rendimiento y la capacidad de almacenamiento e IOPS, eliminar o eliminar el entorno de trabajo y gestionar servicios de datos como backup y recuperación, copia y sincronización, clasificación, replicación y almacenamiento en caché de volúmenes.
 
 
 
@@ -154,4 +154,21 @@ NOTE: Los volúmenes con errores deben eliminarse mediante la consola de gestió
 image:screenshot_fsx_working_environment_delete.png["Una captura de pantalla de la opción DELETE para FSX para ONTAP desde la interfaz de BlueXP."]
 
 . Introduzca el nombre del entorno de trabajo y seleccione *Eliminar*.
+
+
+
+
+== Gestionar los servicios de datos
+
+Puede gestionar otros servicios de datos desde el entorno de trabajo de Amazon FSx para NetApp ONTAP.
+
+image:data-services.png["Una captura de pantalla del separador de servicios de datos en el entorno de trabajo"]
+
+Para obtener información detallada sobre la configuración de servicios de datos, consulte:
+
+* link:https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Backup y recuperación de BlueXP"^] Proporciona protección de datos eficiente, segura y rentable para datos de NetApp ONTAP, volúmenes persistentes de Kubernetes, bases de datos y máquinas virtuales, tanto en las instalaciones como en el cloud.
+* link:https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html["Copia y sincronización de BlueXP"^] Es un servicio de replicación y sincronización de cloud que sirve para transferir datos de NAS entre almacenes de objetos en el cloud y en las instalaciones.
+* link:https://docs.netapp.com/us-en/bluexp-classification/index.html["Clasificación de BlueXP"^] le permite analizar y clasificar los datos en el multicloud híbrido de su organización.
+* link:https://docs.netapp.com/us-en/bluexp-replication/index.html["Replicar datos"^] Entre sistemas de almacenamiento de ONTAP para admitir el backup y la recuperación ante desastres en el cloud o entre clouds.
+* link:https://docs.netapp.com/us-en/bluexp-volume-caching/index.html["Almacenamiento en caché de volúmenes"^] proporciona un volumen persistente y editable en un lugar remoto. Puede usar el almacenamiento en caché de volúmenes de BlueXP para acelerar el acceso a los datos o para descargar el tráfico de volúmenes con un acceso frecuente.
 

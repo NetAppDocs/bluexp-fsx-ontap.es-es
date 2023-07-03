@@ -1,0 +1,116 @@
+---
+sidebar: sidebar 
+permalink: use/task-add-fsx-svm.html 
+keywords: fsx for ontap, fsx, aws, storage vm, storage virtual machine, svm, add svm, virtual machine, delete svm, tags, smb, cifs, delete 
+summary: 'Después de crear tu entorno de trabajo, puedes añadir, ver y gestionar máquinas virtuales de almacenamiento (VM) en un clúster gestionado de Amazon FSx para NetApp ONTAP.' 
+---
+= Añada y gestione máquinas virtuales de almacenamiento para Amazon FSx para NetApp ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Después de crear su entorno de trabajo, puede agregar, ver y administrar una máquina virtual de almacenamiento (VM), también conocida como _SVM_, en un clúster gestionado de Amazon FSx para NetApp ONTAP.
+
+
+
+== Añadir una máquina virtual de almacenamiento
+
+Con BlueXP, puedes añadir máquinas virtuales de almacenamiento al sistema de archivos de Amazon FSx para ONTAP hasta el número máximo permitido. Consulte link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/managing-svms.html["AWS: Gestión de máquinas virtuales de almacenamiento de FSx para ONTAP"^] para obtener más detalles.
+
+.Acerca de esta tarea
+Puede agregar una VM de almacenamiento abriendo el entorno de trabajo y seleccionando la pestaña *VM de almacenamiento* o desde el panel de entorno de trabajo *Descripción general*. Esta tarea describe cómo agregar una VM de almacenamiento mediante el panel *Storage VMs*.
+
+.Antes de empezar
+* Necesita un activo https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.html["Conector en AWS"^].
+* Cree una o varias máquinas virtuales de almacenamiento. Consulte link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms.html["Gestión de equipos virtuales de almacenamiento en BlueXP"^] para obtener más detalles.
+
+
+.Pasos
+. Seleccione el entorno de trabajo FSX para ONTAP en el lienzo. Si no tiene un conector activado, se le pedirá que agregue uno.
+. Seleccione el panel *Storage VMs*. Se muestran las SVM existentes. Seleccione **Agregar SVM** para agregar una SVM nueva.
++
+image:svm-add.png["Una captura de pantalla del panel VMs de almacenamiento."]
+
+. *Añadir máquina virtual de almacenamiento*
++
+.. Introduzca el nombre de la máquina virtual de almacenamiento.
+.. Seleccione el estilo de seguridad del volumen raíz de la máquina virtual de almacenamiento configurado. Los valores válidos son **UNIX**, **NTFS** o **Mixto**.
+.. De manera opcional, especifique una contraseña administrativa de máquina virtual de almacenamiento.
+.. Opcionalmente, cree hasta cincuenta etiquetas para clasificar la SVM haciendo clic en el signo más e introduciendo un nombre y un valor de etiqueta.
+.. Seleccione **Añadir** para añadir la máquina virtual de almacenamiento.
+
+
+
+
+.Resultado
+La nueva máquina virtual de almacenamiento se agrega al entorno de trabajo y al sistema de archivos Amazon FSx for NetApp ONTAP.
+
+
+
+== Gestionar una máquina virtual de almacenamiento
+
+Es posible ver detalles de máquinas virtuales de almacenamiento, gestionar etiquetas, configurar una conexión SMB/CIFS o eliminar una SVM de almacenamiento.
+
+.Antes de empezar
+Necesita un activo https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.html["Conector en AWS"^].
+
+.Pasos
+. Seleccione el entorno de trabajo FSX para ONTAP en el lienzo. Si no tiene un conector activado, se le pedirá que agregue uno.
+. Seleccione el panel *Storage VMs*.
+. Utilice los tres puntos (image:icon-three-dots.png["icono de tres puntos"]) Para abrir el menú de opciones para la máquina virtual de almacenamiento.
++
+image:svm-manage.png["Una captura de pantalla del menú de opciones de gestión de máquina virtual de almacenamiento del panel de máquinas virtuales de almacenamiento."]
+
+. Seleccione una opción de menú para ver o gestionar la configuración de la máquina virtual de almacenamiento.
++
+** **Ver detalles de SVM**: Puede revisar detalles como el volumen raíz, el estilo de seguridad, los protocolos permitidos, el dominio de Active Directory y las etiquetas.
+** **Administrar etiquetas SVM**: Puede agregar, editar o eliminar etiquetas de VM de almacenamiento. Los cambios que realice se sincronizarán con la consola de AWS.
+** **Configurar SMB/CIFS**: Si esta es la primera conexión CIFS para este entorno de trabajo, se le pedirá que configure la conectividad CIFS mediante una configuración _Active Directory_ o _Workgroup_.
++
+*** Si selecciona una configuración de grupo de trabajo, introduzca el servidor y el nombre del grupo de trabajo para un grupo de trabajo configurado para CIFS.
+*** Si selecciona una configuración de Active Directory, tendrá que proporcionar la siguiente información de configuración.
++
+.Configuración de Active Directory
+[%collapsible%open]
+====
+[cols="25,75"]
+|===
+| Campo | Descripción 
+
+
+| Dirección IP primaria DNS | Las direcciones IP de los servidores DNS que proporcionan resolución de nombres para el servidor CIFS. El servidor DNS indicado debe contener los registros de ubicación de servicio (SRV) necesarios para localizar los servidores LDAP de Active Directory y los controladores de dominio del dominio al que se unirá el servidor CIFS. 
+
+
+| Dominio de Active Directory al que unirse | El FQDN del dominio de Active Directory (AD) al que desea que se una el servidor CIFS. 
+
+
+| Credenciales autorizadas para unirse al dominio | Nombre y contraseña de una cuenta de Windows con privilegios suficientes para agregar equipos a la unidad organizativa (OU) especificada dentro del dominio AD. 
+
+
+| Nombre NetBIOS del servidor CIFS | Nombre de servidor CIFS que es único en el dominio de AD. 
+
+
+| Unidad organizacional | La unidad organizativa del dominio AD para asociarla con el servidor CIFS. El valor predeterminado es CN=Computers. 
+
+
+| Dominio DNS | El dominio DNS de la máquina virtual de almacenamiento (SVM). En la mayoría de los casos, el dominio es el mismo que el dominio de AD. 
+
+
+| Servidor NTP | Seleccione *Activar la configuración del servidor NTP* para configurar un servidor NTP mediante el DNS de Active Directory. Si necesita configurar un servidor NTP con una dirección diferente, debe usar la API. Consulte https://docs.netapp.com/us-en/bluexp-automation/index.html["Documentos de automatización de BlueXP"^] para obtener más detalles. 
+|===
+====
+
+
+** **Eliminar SVM**: Puede eliminar la VM de almacenamiento. Debe verificar el nombre de la máquina virtual de almacenamiento para eliminarla.
++
+
+NOTE: Debe eliminar todos los volúmenes de la máquina virtual de almacenamiento antes de eliminar la máquina virtual de almacenamiento.
+
+
+
+

@@ -18,6 +18,14 @@ Descubra las novedades de Amazon FSX para ONTAP de NetApp.
 
 
 
+== 02 de julio de 2023
+
+* Ahora puede hacerlo link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-svm.html["Añadir una máquina virtual de almacenamiento"] Al sistema de archivos de Amazon FSx para NetApp ONTAP mediante BlueXP.
+* La pestaña **Mis oportunidades** ahora es **Mi estado**. La documentación se actualiza para reflejar el nuevo nombre.
+
+
+
+
 == 04 de junio de 2023
 
 * Cuando link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["crear un entorno de trabajo"], puede especificar la hora de inicio de la ventana de mantenimiento semanal de 30 minutos para asegurarse de que el mantenimiento no entra en conflicto con las actividades empresariales críticas.
@@ -48,7 +56,7 @@ Se han realizado mejoras en la interfaz de usuario y se han actualizado las capt
 
 == 01 de enero de 2023
 
-Ahora puede optar por activar link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html#manage-automatic-capacity["gestión de la capacidad automática"^] para añadir almacenamiento incremental basado en demanda. La administración automática de la capacidad sondea el clúster a intervalos regulares para evaluar la demanda y aumenta automáticamente la capacidad de almacenamiento en incrementos del 10% hasta el 80% de la capacidad máxima del clúster.
+Ahora puede optar por activar link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html#manage-automatic-capacity["gestión de la capacidad automática"^] para añadir almacenamiento incremental basado en demanda. La gestión automática de la capacidad sondea al clúster a intervalos regulares para evaluar la demanda y aumenta automáticamente la capacidad de almacenamiento en incrementos del 10 % hasta el 80 % de la capacidad máxima del clúster.
 
 
 
@@ -60,9 +68,9 @@ Ahora puede hacerlo link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task
 
 == 31 de julio de 2022
 
-* Si anteriormente ha proporcionado sus credenciales de AWS a Cloud Manager, la nueva función *Mis oportunidades* puede detectar y sugerir automáticamente FSX para los sistemas de archivos ONTAP para agregar y administrar mediante Cloud Manager. También puede revisar los servicios de datos disponibles a través de la ficha *Mis oportunidades*.
+* Si anteriormente proporcionaste tus credenciales de AWS a Cloud Manager, la nueva función *Mi estado* puede detectar y sugerir automáticamente los sistemas de archivos FSx para ONTAP para agregar y administrar con Cloud Manager. También puede revisar los servicios de datos disponibles a través de la pestaña *Mi estado*.
 +
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system["Descubra FSX para ONTAP usando Mis oportunidades"^]
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system["Descubre FSx para ONTAP usando Mi estado"^]
 
 * Ahora puede hacerlo link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html#change-throughput-capacity["cambie la capacidad de rendimiento"^] En cualquier momento después de crear el entorno de trabajo FSX para ONTAP.
 * Ahora puede hacerlo link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-fsx-volumes.html#replicate-and-sync-data["replicar y sincronizar datos"^] A las instalaciones y otros FSX para sistemas ONTAP que utilizan FSX para ONTAP como origen.

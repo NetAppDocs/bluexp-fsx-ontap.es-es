@@ -23,12 +23,10 @@ indexpage:
     links:
     - title: Crear o detectar un entorno de trabajo
       url: "/use/task-creating-fsx-working-environment.html"
-    - title: Gestionar el entorno de trabajo
-      url: "/use/task-manage-working-environment.html"
-    - title: Cree y monte volúmenes
+    - title: Cree y monte un volumen
       url: "/use/task-add-fsx-volumes.html"
-    - title: Gestione volúmenes y servicios de datos
-      url: "/use/task-manage-fsx-volumes.html"
+    - title: Añadir y gestionar una máquina virtual de almacenamiento
+      url: "/use/task-add-fsx-svm.html"
     - title: Configuración de host iSCSI y NVMe
       url: https://docs.netapp.com/us-en/ontap-sanhost/
   - title: Conocimiento y apoyo
