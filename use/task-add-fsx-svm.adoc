@@ -4,7 +4,7 @@ permalink: use/task-add-fsx-svm.html
 keywords: fsx for ontap, fsx, aws, storage vm, storage virtual machine, svm, add svm, virtual machine, delete svm, tags, smb, cifs, delete 
 summary: 'Después de crear tu entorno de trabajo, puedes añadir, ver y gestionar máquinas virtuales de almacenamiento (VM) en un clúster gestionado de Amazon FSx para NetApp ONTAP.' 
 ---
-= Añada y gestione máquinas virtuales de almacenamiento para Amazon FSx para NetApp ONTAP
+= Añade y gestiona máquinas virtuales de almacenamiento de FSx para ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: 'Después de crear tu entorno de trabajo, puedes añadir, ver y gestion
 
 
 [role="lead"]
-Después de crear su entorno de trabajo, puede agregar, ver y administrar una máquina virtual de almacenamiento (VM), también conocida como _SVM_, en un clúster gestionado de Amazon FSx para NetApp ONTAP.
+Después de crear su entorno de trabajo, puede agregar, ver y gestionar una máquina virtual de almacenamiento (VM), también conocida como _SVM_, en un clúster FSX para ONTAP gestionado.
 
 
 
 == Añadir una máquina virtual de almacenamiento
 
-Con BlueXP, puedes añadir máquinas virtuales de almacenamiento al sistema de archivos de Amazon FSx para ONTAP hasta el número máximo permitido. Consulte link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/managing-svms.html["AWS: Gestión de máquinas virtuales de almacenamiento de FSx para ONTAP"^] para obtener más detalles.
+Con BlueXP, puedes añadir máquinas virtuales de almacenamiento al sistema de archivos FSx para ONTAP hasta el número máximo permitido. Consulte link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/managing-svms.html["AWS: Gestión de máquinas virtuales de almacenamiento de FSx para ONTAP"^] para obtener más detalles.
 
 .Acerca de esta tarea
 Puede agregar una VM de almacenamiento abriendo el entorno de trabajo y seleccionando la pestaña *VM de almacenamiento* o desde el panel de entorno de trabajo *Descripción general*. Esta tarea describe cómo agregar una VM de almacenamiento mediante el panel *Storage VMs*.
@@ -48,7 +48,7 @@ image:svm-add.png["Una captura de pantalla del panel VMs de almacenamiento."]
 
 
 .Resultado
-La nueva máquina virtual de almacenamiento se agrega al entorno de trabajo y al sistema de archivos Amazon FSx for NetApp ONTAP.
+La nueva máquina virtual de almacenamiento se agrega al entorno de trabajo y al sistema de archivos FSx para ONTAP.
 
 
 
@@ -69,7 +69,7 @@ image:svm-manage.png["Una captura de pantalla del menú de opciones de gestión 
 . Seleccione una opción de menú para ver o gestionar la configuración de la máquina virtual de almacenamiento.
 +
 ** **Ver detalles de SVM**: Puede revisar detalles como el volumen raíz, el estilo de seguridad, los protocolos permitidos, el dominio de Active Directory y las etiquetas.
-** **Administrar etiquetas SVM**: Puede agregar, editar o eliminar etiquetas de VM de almacenamiento. Los cambios que realice se sincronizarán con la consola de AWS.
+** **Administrar etiquetas SVM**: Puede agregar, editar o eliminar etiquetas de VM de almacenamiento. Los cambios que realice se sincronizarán con la consola de administración de AWS.
 ** **Configurar SMB/CIFS**: Si esta es la primera conexión CIFS para este entorno de trabajo, se le pedirá que configure la conectividad CIFS mediante una configuración _Active Directory_ o _Workgroup_.
 +
 *** Si selecciona una configuración de grupo de trabajo, introduzca el servidor y el nombre del grupo de trabajo para un grupo de trabajo configurado para CIFS.

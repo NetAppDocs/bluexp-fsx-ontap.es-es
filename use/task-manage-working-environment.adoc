@@ -4,7 +4,7 @@ permalink: use/task-manage-working-environment.html
 keywords: amazon fsx for netapp ontap, fsx, manage working environment, delete working environment, remove working environment, throughput capacity, change throughput, automatic capacity management, capacity management, storage capacity, replication, classification, sync, backup, recovery 
 summary: BlueXP le permite gestionar su entorno de trabajo FSX para ONTAP. Puede habilitar la gestión automática de la capacidad, cambiar el rendimiento y la capacidad de almacenamiento e IOPS, eliminar o eliminar el entorno de trabajo y gestionar servicios de datos como backup y recuperación, copia y sincronización, clasificación, replicación y almacenamiento en caché de volúmenes. 
 ---
-= Gestione un entorno de trabajo de Amazon FSX para ONTAP de NetApp
+= Gestionar un entorno de trabajo de FSx para ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -116,7 +116,7 @@ image:screenshot-configure-iops.png["Captura de pantalla de la página para camb
 
 == Elimine FSX para ONTAP del espacio de trabajo
 
-Puede eliminar FSX para ONTAP de BlueXP sin eliminar su cuenta o volúmenes de FSX para ONTAP. Puede volver a agregar el entorno de trabajo de FSX para ONTAP a BlueXP en cualquier momento.
+Puedes quitar FSx para ONTAP de BlueXP sin eliminar la cuenta ni los volúmenes. Puede volver a agregar el entorno de trabajo de FSX para ONTAP a BlueXP en cualquier momento.
 
 .Pasos
 . Abra el entorno de trabajo. Si no tiene un conector en AWS, verá la pantalla de solicitud. Puede ignorar esto y continuar con la eliminación del entorno de trabajo.
@@ -160,7 +160,7 @@ image:screenshot_fsx_working_environment_delete.png["Una captura de pantalla de 
 
 == Gestionar los servicios de datos
 
-Puede gestionar otros servicios de datos desde el entorno de trabajo de Amazon FSx para NetApp ONTAP.
+Puede gestionar otros servicios de datos desde el entorno de trabajo de FSx para ONTAP.
 
 image:data-services.png["Una captura de pantalla del separador de servicios de datos en el entorno de trabajo"]
 
