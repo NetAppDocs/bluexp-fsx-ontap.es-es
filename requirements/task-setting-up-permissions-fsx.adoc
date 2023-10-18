@@ -24,16 +24,22 @@ Configure una función de IAM que permita a BlueXP asumir la función.
 
 .Pasos
 . Vaya a la consola IAM de la cuenta de destino.
-. En Access Management, haga clic en *roles > Crear función* y siga los pasos para crear la función.
+. Otorga acceso de BlueXP a la cuenta de AWS. En Access Management, haga clic en *roles > Crear función* y siga los pasos para crear la función.
 +
 ** En *Tipo de entidad de confianza*, seleccione *cuenta de AWS*.
-** Seleccione *otra cuenta de AWS* e introduzca el ID de BlueXP.
+** Selecciona *Otra cuenta de AWS* e introduce el *ID de cuenta* de BlueXP:
 +
 *** Para BlueXP SaaS: 952013314444
 *** Para AWS GovCloud (EE. UU.): 033442085313
++
+
+NOTE: Para mayor seguridad, le sugerimos que especifique un link:https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html["_ID externo_"^]. Para acceder a tu cuenta de AWS, BlueXP tendrá que proporcionar la función ARN (Amazon Resource Name) y el ID externo que especifiques. Esto impide el link:https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html["problema de adjunto confuso"^].
 
 
-** Cree una política que incluya los siguientes permisos mínimos requeridos y los permisos opcionales, según sea necesario.
+
+
+
+. Cree una política que incluya los siguientes permisos mínimos requeridos y los permisos opcionales, según sea necesario.
 +
 [role="tabbed-block"]
 ====
@@ -93,9 +99,7 @@ Se necesitan los siguientes permisos adicionales para permitir que BlueXP lo hag
 ----
 --
 ====
-
-
-. Copie el rol ARN de la función IAM para que pueda pegarlo en BlueXP en el siguiente paso.
+. Copia el ARN de rol del rol de IAM para poder pegarlo en BlueXP en el siguiente paso.
 
 
 .Resultado
@@ -108,7 +112,7 @@ El rol IAM ahora tiene los permisos necesarios.
 Después de proporcionar la función IAM con los permisos necesarios, agregue el rol ARN a BlueXP.
 
 .Antes de empezar
-Si acaba de crear la función IAM, puede tardar unos minutos en estar disponible. Espere unos minutos antes de agregar las credenciales a BlueXP.
+Si acaba de crear el rol de IAM, espere unos minutos para que las nuevas credenciales estén disponibles.
 
 .Pasos
 . En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *credenciales*.
@@ -118,7 +122,7 @@ image:screenshot_settings_icon.gif["Captura de pantalla que muestra el icono Con
 . Haga clic en *Agregar credenciales* y siga los pasos del asistente.
 +
 .. *Ubicación de credenciales*: Seleccione *Servicios Web de Amazon > BlueXP*.
-.. *Definir credenciales*: Proporcionar el ARN (nombre de recurso de Amazon) de la función IAM.
+.. *Definir Credenciales*: Proporciona un *Nombre de Credenciales* y el *Rol ARN* y *ID Externo* (si se especifica) que creaste cuando lo hiciste <<Configure el rol IAM>>.
 +
 [NOTE]
 ====

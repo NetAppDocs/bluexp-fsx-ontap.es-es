@@ -307,24 +307,19 @@
   <block id="d8a56d983b91f097e5ba55dd03a18509" category="section-title">Configure el rol IAM</block>
   <block id="1db8d07619da1f12a7b920676f6769ae" category="paragraph">Configure una función de IAM que permita a BlueXP asumir la función.</block>
   <block id="44030f19e52b4a03b050525f287bbc15" category="list-text">Vaya a la consola IAM de la cuenta de destino.</block>
-  <block id="7f4640b00b5df83a54d4aaaa51f7d6ab" category="list-text">En Access Management, haga clic en *roles &gt; Crear función* y siga los pasos para crear la función.</block>
   <block id="e506de832b98c2693eb3f400ef0722c0" category="list-text">En *Tipo de entidad de confianza*, seleccione *cuenta de AWS*.</block>
-  <block id="c29858d9450fbef0a082acaa54d1bc6d" category="list-text">Seleccione *otra cuenta de AWS* e introduzca el ID de BlueXP.</block>
   <block id="edcfddcfff54621c47b01eddd968a5b0" category="list-text">Para BlueXP SaaS: 952013314444</block>
   <block id="319c3fdfa37c6b0ae4e91a351706489b" category="list-text">Para AWS GovCloud (EE. UU.): 033442085313</block>
   <block id="f99ecd5cff9b18879fcd5ee404af256f" category="inline-link-macro">gestión de la capacidad automática</block>
-  <block id="fa9df323148192800073dd2a78c81f73" category="list-text">Copie el rol ARN de la función IAM para que pueda pegarlo en BlueXP en el siguiente paso.</block>
   <block id="d47c23803528fa45fad33a3f83dfcf54" category="paragraph">El rol IAM ahora tiene los permisos necesarios.</block>
   <block id="36bc52aaebad43ec3e49ed9a0efacd43" category="section-title">Añada las credenciales</block>
   <block id="d5dc64744da4d60a47aa835877d08194" category="paragraph">Después de proporcionar la función IAM con los permisos necesarios, agregue el rol ARN a BlueXP.</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">Antes de empezar</block>
-  <block id="6d9d6baff2479ce7a87bf705f93f1641" category="paragraph">Si acaba de crear la función IAM, puede tardar unos minutos en estar disponible. Espere unos minutos antes de agregar las credenciales a BlueXP.</block>
   <block id="b019ab068deba8494415cbd226ca0c4e" category="list-text">En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *credenciales*.</block>
   <block id="be9d7b7687f0c55f7e65f14cd2b0f530" category="inline-image-macro">Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP.</block>
   <block id="cb9e3791dcb67c8a699c104be6a1c49c" category="paragraph"><block ref="cb9e3791dcb67c8a699c104be6a1c49c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="11832df968cbb4cdb8e45984c11a77d0" category="list-text">Haga clic en *Agregar credenciales* y siga los pasos del asistente.</block>
   <block id="469d6f26b0e14d75fc0c834eeac72311" category="list-text">*Ubicación de credenciales*: Seleccione *Servicios Web de Amazon &gt; BlueXP*.</block>
-  <block id="8cf335d7d3b1dd5cdac30699d20489c0" category="list-text">*Definir credenciales*: Proporcionar el ARN (nombre de recurso de Amazon) de la función IAM.</block>
   <block id="a7cf2ac8ff4dd10d1e304f0abd7fe0bd" category="list-text">Si utiliza una cuenta de AWS GovCloud (EE. UU.), marque *utilizo una cuenta de AWS GovCloud (EE. UU.)*.</block>
   <block id="045e30d9d567e729274d9202eee4ff62" category="inline-image-macro">Una captura de pantalla de la casilla de verificación de la cuenta GovCloud (EE. UU.).</block>
   <block id="c03a6ecd27b7a5ea40ee52d99c7a247a" category="paragraph"><block ref="c03a6ecd27b7a5ea40ee52d99c7a247a" category="inline-image-macro-rx" type="image"></block></block>
@@ -819,4 +814,12 @@
   <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">Obtenga soporte para un servicio de archivos de proveedores de cloud</block>
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">Para obtener soporte técnico relacionado con un servicio de archivos del proveedor de cloud, su infraestructura o cualquier solución que utilice el servicio, consulte «Obtener ayuda» en la documentación de BlueXP para ese producto.</block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">Para recibir soporte técnico específico sobre BlueXP y sus soluciones y servicios de almacenamiento, use las opciones de soporte descritas a continuación.</block>
+  <block id="8e2d9036bdca41a47ed6a62d5c651b17" category="list-text">Otorga acceso de BlueXP a la cuenta de AWS. En Access Management, haga clic en *roles &gt; Crear función* y siga los pasos para crear la función.</block>
+  <block id="100857c2eecdae8b99b613fc837c4b77" category="list-text">Selecciona *Otra cuenta de AWS* e introduce el *ID de cuenta* de BlueXP:</block>
+  <block id="7705419552b80484a159f2d27d7cf57b" category="inline-link-macro">_ID externo_</block>
+  <block id="2ecdc21261ba583d893ec3e735f02292" category="inline-link-macro">problema de adjunto confuso</block>
+  <block id="a382deac7db7b733bc63619e401d8f45" category="admonition">Para mayor seguridad, le sugerimos que especifique un <block ref="96b272eff9669a5b2b13cba8c25b9973" category="inline-link-macro-rx"></block>. Para acceder a tu cuenta de AWS, BlueXP tendrá que proporcionar la función ARN (Amazon Resource Name) y el ID externo que especifiques. Esto impide el <block ref="2847290d28a09952a637392df577ce64" category="inline-link-macro-rx"></block>.</block>
+  <block id="5490038d2be728c6d3679ab6915e87e3" category="list-text">Copia el ARN de rol del rol de IAM para poder pegarlo en BlueXP en el siguiente paso.</block>
+  <block id="1a913f679da8e614b14423480f9ce6be" category="paragraph">Si acaba de crear el rol de IAM, espere unos minutos para que las nuevas credenciales estén disponibles.</block>
+  <block id="a2841ca82f44794bf8912d92f8eaf4d6" category="list-text">*Definir Credenciales*: Proporciona un *Nombre de Credenciales* y el *Rol ARN* y *ID Externo* (si se especifica) que creaste cuando lo hiciste <block ref="a1061025d6c6e25a2b8607068ce69197" category="inline-xref-macro-rx"></block>.</block>
 </blocks>
