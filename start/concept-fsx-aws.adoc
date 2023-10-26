@@ -21,7 +21,7 @@ link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["A
 == Funciones
 
 * No es necesario configurar ni gestionar dispositivos de almacenamiento, software o backups.
-* Compatibilidad con los protocolos CIFS, NFSv3, NFSv4.x y SMB v2.0: V3.1.1.
+* Compatibilidad con los protocolos CIFS, iSCSI, NFSv3, NFSv4.x y SMB v2,0 - v3,1.1.
 * Capacidad de almacenamiento de datos prácticamente ilimitada y de bajo coste mediante el uso del nivel de almacenamiento a el que se accede con poca frecuencia (IA).
 * Certificado para ejecutarse en aplicaciones sensibles a la latencia, incluido Oracle RAC.
 * Opción de precios incluidos y de pago por uso.
