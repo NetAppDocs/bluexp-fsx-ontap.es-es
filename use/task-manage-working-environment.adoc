@@ -114,7 +114,7 @@ image:screenshot-configure-iops.png["Captura de pantalla de la página para camb
 
 
 
-== Elimine FSX para ONTAP del espacio de trabajo
+== Elimine FSx para ONTAP del proyecto o del espacio de trabajo
 
 Puedes quitar FSx para ONTAP de BlueXP sin eliminar la cuenta ni los volúmenes. Puede volver a agregar el entorno de trabajo de FSX para ONTAP a BlueXP en cualquier momento.
 
