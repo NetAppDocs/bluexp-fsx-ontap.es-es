@@ -1,5 +1,6 @@
 ---
 indexpage:
+  title: Documentación de Amazon FSX para ONTAP de NetApp
   lead: Amazon FSX para ONTAP de NetApp aporta todas las funcionalidades de ONTAP
     a un servicio gestionado nativo de AWS que ofrece una experiencia de cloud híbrido
     coherente. Esta documentación describe cómo gestionar FSX para ONTAP con NetApp
