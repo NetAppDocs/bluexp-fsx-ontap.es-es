@@ -623,20 +623,6 @@
   <block id="8d757dbdc7fa419adfd2d9b20629a645" category="paragraph">Necesita un activo<block ref="36a4e36eea867c3f44362f37d4545eda" category="inline-link-rx"></block>.</block>
   <block id="b344b4701c7bc470b4d413e98ef9c9f9" category="cell">Seleccione *Activar la configuración del servidor NTP* para configurar un servidor NTP mediante el DNS de Active Directory. Si necesita configurar un servidor NTP con una dirección diferente, debe usar la API. Consulte<block ref="7665d9260dd9d6a287f2bbc0560d523f" category="inline-link-rx"></block> para obtener más detalles.</block>
   <block id="82fec6d31b25a5ecb50c02e473be2188" category="list-text">Haga clic en para añadir uno o varios nombres completos de iSCSI (IQN) del host. Puede seleccionar IQN existentes o agregar nuevos IQN. Para obtener más detalles sobre cómo encontrar el IQN de un volumen, consulte <block ref="bb4247f1c80c630362ed25b8c41eed59" category="inline-link-macro-rx"></block>.</block>
-  <block id="b6f1ebb155eaf4c6e07d7a105b1d5a53" category="list-text">Al crear un entorno de trabajo, ahora puedes tener BlueXP <block ref="3ba2cfc3ef2a3c163fc4910682cfb7d6" category="inline-link-macro-rx"></block> Esto permite el tráfico dentro de la VPC seleccionada solamente. Esta función <block ref="097f8dd60847dad6062ac7ea2bd09c06" category="inline-link-macro-rx"></block>.</block>
-  <block id="46ce6a634ad58fa667690e7f5c151b26" category="list-text">Usted puede opcionalmente <block ref="2af1713063b9a7e50c1f5e13c7671bae" category="inline-link-macro-rx"></block> y.. <block ref="013335dc35ce07c311c673e8a99c88f9" category="inline-link-macro-rx"></block> etiquetas para categorizar volúmenes.</block>
-  <block id="8b5edcd6e9d4ab9285ee3664af7ea2a9" category="paragraph">Ahora puede hacerlo <block ref="9b7f213d695f8dd25ea908078792fd69" category="inline-link-macro-rx"></block> En cualquier momento después de crear el entorno de trabajo FSX para ONTAP.</block>
-  <block id="733ef426ec092c634a1b7dbaf3373220" category="list-text">Ahora puede hacerlo <block ref="9152528a95687d317ab62dcde238fdef" category="inline-link-macro-rx"></block> En cualquier momento después de crear el entorno de trabajo FSX para ONTAP.</block>
-  <block id="32417d8e9e3c82c4c5314062782575c9" category="list-text">Ahora puede hacerlo <block ref="f635c46f2cd088dcf1369f807e47e94f" category="inline-link-macro-rx"></block> A las instalaciones y otros FSX para sistemas ONTAP que utilizan FSX para ONTAP como origen.</block>
-  <block id="9f4e04fb3f0860f8350f8ebb5e3a6709" category="list-text">Ahora puede hacerlo <block ref="2e2cc205fa7502696c4503aa2708460c" category="inline-link-macro-rx"></block>.</block>
-  <block id="8fd7534d6aebbd882ef1960f77315b2f" category="paragraph"><block ref="8fd7534d6aebbd882ef1960f77315b2f" category="inline-link-macro-rx"></block></block>
-  <block id="e6d0f7e4f8ca7981e7941ccbbb8a1a64" category="paragraph"><block ref="e6d0f7e4f8ca7981e7941ccbbb8a1a64" category="inline-link-macro-rx"></block></block>
-  <block id="a192906bb862e862bbb53506559a844d" category="paragraph"><block ref="9516e987fbb53ba186cfd7cef3866a34" category="inline-link-macro-rx"></block>.</block>
-  <block id="a9736f093d873bda23fae5af0f2e59ad" category="paragraph">Puede hacerlo <block ref="86859984b3fe2a3db500ca938508fd38" category="inline-link-macro-rx"></block> En FSX para ONTAP.</block>
-  <block id="7c0b6ff49cfe71493375c14aa404ca6c" category="paragraph">Ahora es posible <block ref="52b661a6eadedcae5186a4ebf8b872ae" category="inline-link-macro-rx"></block>.</block>
-  <block id="9fb5d20591c6848f132647679c0da362" category="paragraph">Ahora es posible <block ref="89079ccbf05a0fc2ea3954d0d79bc38f" category="inline-link-macro-rx"></block>.</block>
-  <block id="557b3fb1f758926ca04bd11d6807c299" category="paragraph"><block ref="834ff3a562756e0b7e56a13f4eb96013" category="inline-link-macro-rx"></block>.</block>
-  <block id="d08ad840d921084daab3eb8ec7ed95d0" category="paragraph"><block ref="1e975261e8c6330d82170a203547fafa" category="inline-link-macro-rx"></block>.</block>
   <block id="9392a234f812a64a7add82bf3ea440ce" category="paragraph"><block ref="6c403399a6912b636ecf2c35a037d6c1" category="inline-link-macro-rx"></block>.</block>
   <block id="6bc0d0afbcf301d393b1808f854ff30e" category="list-text"><block ref="6bc0d0afbcf301d393b1808f854ff30e" category="inline-link-rx"></block></block>
   <block id="8fb5f344898fe922856ca069cb615707" category="list-text"><block ref="8fb5f344898fe922856ca069cb615707" category="inline-link-rx"></block></block>
@@ -728,10 +714,8 @@
   <block id="d41b120a4f792ebe6195de3355c6309a" category="inline-link-macro">Añadir una máquina virtual de almacenamiento</block>
   <block id="ef4fe9904a05c0168f433db5ef979256" category="list-text">Ahora puede hacerlo <block ref="73429b7c98363ef2dcc9eca20bd224e7" category="inline-link-macro-rx"></block> Al sistema de archivos de Amazon FSx para NetApp ONTAP mediante BlueXP.</block>
   <block id="c835313828dae8f6f2e19118949a05ce" category="list-text">La pestaña **Mis oportunidades** ahora es **Mi estado**. La documentación se actualiza para reflejar el nuevo nombre.</block>
-  <block id="5acc19c1ac9cb4ec703f692929b77d4f" category="paragraph">Ahora puede optar por activar <block ref="798ae2d54008eb1f5d42a000af614a06" category="inline-link-macro-rx"></block> para añadir almacenamiento incremental basado en demanda. La gestión automática de la capacidad sondea al clúster a intervalos regulares para evaluar la demanda y aumenta automáticamente la capacidad de almacenamiento en incrementos del 10 % hasta el 80 % de la capacidad máxima del clúster.</block>
   <block id="8427e95422b20518ebfdf9669981c983" category="list-text">Si anteriormente proporcionaste tus credenciales de AWS a Cloud Manager, la nueva función *Mi estado* puede detectar y sugerir automáticamente los sistemas de archivos FSx para ONTAP para agregar y administrar con Cloud Manager. También puede revisar los servicios de datos disponibles a través de la pestaña *Mi estado*.</block>
   <block id="690df0feee64ee1dfd9e2fabd3bd7196" category="inline-link-macro">Descubre FSx para ONTAP usando Mi estado</block>
-  <block id="3126d0bb3bdeb0d61fd04be8640e4d8e" category="paragraph"><block ref="3126d0bb3bdeb0d61fd04be8640e4d8e" category="inline-link-macro-rx"></block></block>
   <block id="72bf8572f979788f8a9b08819c412e18" category="sidebar">Cree y monte un volumen</block>
   <block id="a377a5b84f9f0bc2da96286bf312e442" category="sidebar">Añadir y gestionar una máquina virtual de almacenamiento</block>
   <block id="e2439a8512b353f75391ba9c346bc84d" category="sidebar">Gestione los volúmenes</block>
@@ -820,4 +804,34 @@
   <block id="8166996cb4a59c147200d89a061bb49c" category="paragraph">Estas credenciales de NSS están asociadas con su ID de organización de BlueXP  específico. Los usuarios que pertenecen a la organización BlueXP  pueden acceder a estas credenciales desde *Soporte &gt; Administración de NSS*.</block>
   <block id="43bfe52d70c7aa3f5d364396cd6ec3fd" category="section-title">Elimine FSx para ONTAP del proyecto o del espacio de trabajo</block>
   <block id="6c6cfde7c92a73ae5e1266396d6657d9" category="admonition">Si no especificó manualmente un valor de IOPS al crear el entorno de trabajo, BlueXP aumentará las IOPS en 3 IOPS por GIB de la nueva capacidad total. Si ha especificado un valor de IOPS, BlueXP no ajustará las IOPS. Para obtener más información acerca de la configuración de IOPS, consulte <block ref="a0c1e5541590cfd29c35eef67f286e58" category="inline-link-macro-rx"></block>.</block>
+  <block id="c0fde7a894f20194ba5123471f8cf7e7" category="doc">Hora de inicio de la ventana de mantenimiento</block>
+  <block id="12ad4af5f024e558448bad702ec7ef28" category="section-title">Distribución de datos de volúmenes mediante FlexGroups</block>
+  <block id="c63d5220743c53eaddaae4ea5f0511e7" category="section-title">**Mi pestaña de Oportunidades** es ahora **Mi estado**</block>
+  <block id="479422755a82da93d381b0baab5f8fe7" category="doc">Apoyo para tres regiones adicionales</block>
+  <block id="e2be93aaa649a645aba11243985c766e" category="section-title">Generar un grupo de seguridad</block>
+  <block id="aad99a875ad0c9448b68c1367f655aa5" category="paragraph">Al crear un entorno de trabajo, ahora puede tener BlueXP  <block ref="2dcc7fe33dfc1ec3c2553fdd253353e0" category="inline-link-macro-rx"></block>que permita el tráfico solo dentro de la VPC seleccionada. Esta función <block ref="4e98d12e63c5c0720c845cda898d916d" category="inline-link-macro-rx"></block>.</block>
+  <block id="5fd8323487c8b69df76423b19fd7e929" category="section-title">Agregue o modifique etiquetas</block>
+  <block id="6f4442b553244ce52c784cc52f701d4b" category="paragraph">De manera opcional, puede <block ref="d78637da2799ddfac5dd66dca8e7ea18" category="inline-link-macro-rx"></block>categorizar los volúmenes y <block ref="4a85f9a70555f38d50391396eef17875" category="inline-link-macro-rx"></block> etiquetas.</block>
+  <block id="54bbdb510ae0f695a97b35e9620b2429" category="section-title">Aumento del límite de IOPS</block>
+  <block id="6a017cfe14e32a2ecb3b562a6905c135" category="section-title">Interfaz de usuario mejorada</block>
+  <block id="f2be69b635c39988351f6636a52c66bd" category="section-title">Gestión de la capacidad automática</block>
+  <block id="77b6a90689811f67cc803249dffcf057" category="paragraph">Ahora puede optar por habilitar <block ref="1ad077b1d76451dcea34a865ef72a4a2" category="inline-link-macro-rx"></block> la adición de almacenamiento incremental en función de la demanda. La gestión automática de la capacidad sondea al clúster a intervalos regulares para evaluar la demanda y aumenta automáticamente la capacidad de almacenamiento en incrementos del 10 % hasta el 80 % de la capacidad máxima del clúster.</block>
+  <block id="45d8831f16b41217c4087275e351f716" category="paragraph">Ahora puedes <block ref="5a81e5cffb3de2e4ff731d59ff35b987" category="inline-link-macro-rx"></block>después de crear el entorno de trabajo de FSx para ONTAP en cualquier momento.</block>
+  <block id="ca9bb4e7ad7b9dd541f6f55e7b321568" category="section-title">*Mi propiedad* característica</block>
+  <block id="0d984c201ccfc0cec47c6e9aaaa3548c" category="paragraph"><block ref="0d984c201ccfc0cec47c6e9aaaa3548c" category="inline-link-macro-rx"></block></block>
+  <block id="9b453da7e373871ff96466f7161324e9" category="paragraph">Ahora puedes <block ref="0dcb65269029cdd4c021d02aa3f3aa08" category="inline-link-macro-rx"></block>después de crear el entorno de trabajo de FSx para ONTAP en cualquier momento.</block>
+  <block id="016049d3662ab4f0c21871ed98f2bb37" category="section-title">Replicar y sincronizar datos</block>
+  <block id="de33755c2f05576d068c86206230329a" category="paragraph">Ahora puedes <block ref="c82ac41f9f49c13c94f808bac3165e62" category="inline-link-macro-rx"></block>acceder a las instalaciones y a otros sistemas FSx para ONTAP utilizando FSx para ONTAP como origen.</block>
+  <block id="747d46ff7f4432b15fb87d52f7f0ff2a" category="section-title">Crear volumen iSCSI</block>
+  <block id="fd8c9e37d8db8d27c7b235d307673cf7" category="paragraph">Ahora puede <block ref="7edfce83a1793d1d9bff25243a609f09" category="inline-link-macro-rx"></block>.</block>
+  <block id="d79900702dea0a3cbd86163202f91f3a" category="section-title">Compatibilidad con un único o múltiple Zon de disponibilidad</block>
+  <block id="abe867b96960cc2af1f7063ddfd2ca6d" category="paragraph"><block ref="abe867b96960cc2af1f7063ddfd2ca6d" category="inline-link-macro-rx"></block></block>
+  <block id="4869939e49d1dbdd540bc87d62436a3f" category="section-title">Compatibilidad con la autenticación de cuentas GovCloud</block>
+  <block id="994f04734d0bda22f0c527103d6be0c9" category="paragraph"><block ref="994f04734d0bda22f0c527103d6be0c9" category="inline-link-macro-rx"></block></block>
+  <block id="5b258d27d1686d8aff26c4da65f8b510" category="paragraph"><block ref="1b53e429ea3df93a4ea7e25c176ae236" category="inline-link-macro-rx"></block>.</block>
+  <block id="61dbf7cf47d95446655246c97325220f" category="paragraph"><block ref="37652122d4cb2db6a33d92a8bdf313a9" category="inline-link-macro-rx"></block>Puedes hacerlo en FSx para ONTAP.</block>
+  <block id="7bbd999550cefc7b5baa6a41c10035c1" category="paragraph">Ahora usted puede <block ref="fcf5732b84f39115bb7eec912809d959" category="inline-link-macro-rx"></block>.</block>
+  <block id="c3907d3f6c877cb2a043b5a4fbee371b" category="paragraph">Ahora usted puede <block ref="a480e52e1eed28b86151e9db4a30d9fb" category="inline-link-macro-rx"></block>.</block>
+  <block id="b1be7e05c9b9a6323c9057ee75d0c768" category="paragraph"><block ref="8b96268d04548ada8a46317048a75d5d" category="inline-link-macro-rx"></block>.</block>
+  <block id="9d2d8ed54095e2ac19a91e1fafd44dab" category="paragraph"><block ref="78c1bb33bbb453f41ca8a4b947f8849c" category="inline-link-macro-rx"></block>.</block>
 </blocks>

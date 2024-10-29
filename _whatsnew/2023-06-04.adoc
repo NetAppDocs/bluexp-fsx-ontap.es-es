@@ -1,0 +1,15 @@
+= Hora de inicio de la ventana de mantenimiento
+:allow-uri-read: 
+
+
+
+
+=== Hora de inicio de la ventana de mantenimiento
+
+Cuando link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["crear un entorno de trabajo"], puede especificar la hora de inicio de la ventana de mantenimiento semanal de 30 minutos para asegurarse de que el mantenimiento no entra en conflicto con las actividades empresariales críticas.
+
+
+
+=== Distribución de datos de volúmenes mediante FlexGroups
+
+Cuando link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html["creación de un volumen"], Puede habilitar la optimización de datos mediante la creación de una FlexGroup para distribuir datos entre volúmenes.
