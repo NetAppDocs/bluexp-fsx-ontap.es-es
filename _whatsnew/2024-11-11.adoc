@@ -1,0 +1,11 @@
+= FSX para ONTAP se integra con el almacenamiento en la fábrica de cargas de trabajo de BlueXP 
+:allow-uri-read: 
+
+
+
+
+=== FSX para ONTAP se integra con el almacenamiento en la fábrica de cargas de trabajo de BlueXP 
+
+FSX para tareas de gestión del sistema de archivos ONTAP como añadir volúmenes, ampliar la capacidad del sistema de archivos y gestionar las máquinas virtuales de almacenamiento ahora se gestionan en la fábrica de cargas de trabajo de BlueXP , un nuevo servicio que ofrece NetApp y Amazon FSx para NetApp ONTAP. Puede utilizar sus credenciales y permisos existentes igual que antes. La diferencia es que ahora puede hacer más desde la fábrica de cargas de trabajo de BlueXP  para gestionar sus sistemas de archivos. Cuando abres un entorno de trabajo de FSx para ONTAP desde el Canvas de BlueXP , pasarás directamente a la fábrica de cargas de trabajo de BlueXP .
+
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html#features["Obtén más información sobre las características de FSx para ONTAP en la fábrica de cargas de trabajo de BlueXP "^]
