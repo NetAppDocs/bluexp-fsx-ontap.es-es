@@ -28,7 +28,7 @@ Al crear un sistema de archivos, se crea una máquina virtual de almacenamiento.
 .Antes de empezar
 Antes de crear tu sistema de archivos FSx for ONTAP, necesitarás:
 
-* El ARN de un rol de IAM que proporciona a Workload Factory los permisos necesarios para crear un sistema de archivos FSx para ONTAP. link:task-setting-up-permissions-fsx.html["Aprende a otorgar permisos a una cuenta de AWS"^].
+* El ARN de un rol de IAM que proporciona a Workload Factory los permisos necesarios para crear un sistema de archivos FSx para ONTAP. link:../requirements/task-setting-up-permissions-fsx.html["Aprende a otorgar permisos a una cuenta de AWS"^].
 * La región y la información de VPC para la que creará la instancia de FSX para ONTAP.
 
 
