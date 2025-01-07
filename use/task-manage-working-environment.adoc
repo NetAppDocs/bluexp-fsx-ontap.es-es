@@ -34,6 +34,14 @@ image:screenshot-system-manager.png["Una captura de pantalla del panel derecho e
 
 
 
+== Administrar un sistema de archivos mediante Amazon CloudFormation
+
+Puedes aprovisionar y gestionar recursos del sistema de archivos FSx para ONTAP (volúmenes, recursos compartidos de CIFS, políticas de exportación y mucho más) con Amazon CloudFormation.
+
+link:https://github.com/NetApp/NetApp-CloudFormation-FSx-ONTAP-provider[""]
+
+
+
 == Utilice los servicios de datos de BlueXP  con un sistema de archivos
 
 Utiliza los servicios de datos de BlueXP  con tus sistemas de archivos FSx para ONTAP para hacer copias de seguridad y recuperar tus datos, transferir y sincronizar datos, analizar y clasificar tus datos, replicar datos y acelerar el acceso y descargar el tráfico.

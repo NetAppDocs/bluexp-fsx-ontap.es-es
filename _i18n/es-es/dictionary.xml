@@ -135,7 +135,6 @@
   <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">Inicio rápido</block>
   <block id="9a11eb5da5d06e3593dc6b41553d97e5" category="sidebar">Configure los permisos</block>
   <block id="4654b99a0535f374a8ff766873df50a6" category="sidebar">Crear o detectar un entorno de trabajo</block>
-  <block id="74e5a199ea27b8b415c0c77d75229e79" category="sidebar">Configuración de host iSCSI y NVMe</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conocimiento y apoyo</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blogs y comunidad</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Comunidad de NetApp</block>
@@ -348,8 +347,6 @@
   <block id="c8df78ded4cea0598f7679f11a3c3246" category="list-text">Seleccione *Agregar manualmente* y luego siga los pasos a continuación para completar las tres secciones en _Configuración de permisos_.</block>
   <block id="ef7fe40c036b5b08d74837dcb702dc33" category="inline-image-macro">Una captura de pantalla que muestra los elementos que necesita definir manualmente para cada juego de credenciales.</block>
   <block id="083fb8583b0a2366ef9a94388dd9640f" category="paragraph"><block ref="083fb8583b0a2366ef9a94388dd9640f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d11861b4e2dfc9ac3d86245926aa2785" category="section-title">Paso 1: Seleccione las capacidades de carga de trabajo y cree las políticas de IAM</block>
-  <block id="530d81548274a062436af51b8c3e829f" category="paragraph">En esta sección, podrá elegir qué tipos de funcionalidades de carga de trabajo se gestionarán como parte de estas credenciales y los permisos habilitados para cada carga de trabajo. Tendrá que copiar los permisos de política para cada carga de trabajo seleccionada desde CodeBox y agregarlos a la consola de administración de AWS dentro de su cuenta de AWS para crear las políticas.</block>
   <block id="445f4ba50fbc8e7b285aedb4396412bb" category="inline-image-macro">Una captura de pantalla que muestra los tipos de capacidades de carga de trabajo que se gestionarán como parte de las políticas de estas credenciales.</block>
   <block id="0edc9a25423073fcc768405f6aeda88b" category="paragraph"><block ref="0edc9a25423073fcc768405f6aeda88b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eb73cd2a4bbc3dbb4bbab5f5a9b6fb8d" category="list-text">Desde la sección *Crear políticas*, habilite cada una de las capacidades de carga de trabajo que desea incluir en estas credenciales. Habilite *Storage* para crear y administrar sistemas de archivos.</block>
@@ -535,7 +532,6 @@
   <block id="cf9ae4b94802ab988b8884ed9bf12509" category="sidebar">Gestión de Amazon FSx para NetApp ONTAP mediante BlueXP </block>
   <block id="622ad6297367666ca450d994236cbc2d" category="paragraph">Si está buscando la opción _advanced view_, que le permite administrar un sistema de archivos FSX for ONTAP con el Administrador del sistema de ONTAP, ahora puede encontrar esa opción en el lienzo de BlueXP  después de seleccionar el entorno de trabajo.</block>
   <block id="66cff4f3970f46872862ee60b7f0a832" category="paragraph"><block ref="66cff4f3970f46872862ee60b7f0a832" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1de58d4f64d081fb97f1d591f6b96a7c" category="paragraph">Al agregar nuevas credenciales para FSx para ONTAP desde el almacenamiento en la fábrica de cargas de trabajo de BlueXP , deberá decidir en qué nivel de permisos, o _operational mode_, le gustaría operar. Para detectar e implementar recursos de AWS como FSx para sistemas de archivos ONTAP, necesitará permisos _read_ o _automate_. BlueXP  FSX para ONTAP funcionará en modo _BASIC_ a menos que seleccione el modo _READ_ o el modo _AUTOMATIC_. <block ref="d6d34839020cc53cd6cb3ac295769611" category="inline-link-macro-rx"></block>.</block>
   <block id="d8030aec0b616170c1d448f645629048" category="paragraph">Desde el lienzo de BlueXP , puedes crear y descubrir entornos de trabajo de FSx para ONTAP y usar System Manager y otros servicios de BlueXP . Si quieres gestionar entornos de trabajo y cargas de trabajo de FSx para ONTAP que se ejecutan en Amazon FSx para NetApp ONTAP, utiliza<block ref="809afc2f4cb79e608d46f9e3b3ede420" category="inline-link-rx"></block>.</block>
   <block id="080bf239eab90228128570c1dcff727d" category="inline-link-macro">Descubre cómo crear y descubrir entornos de trabajo de FSx para ONTAP en BlueXP </block>
   <block id="cb955ea4bb940d72f2e54584baf5cad0" category="paragraph"><block ref="245fb4ba49d4510f0ab7c36a85ac006b" category="inline-link-macro-rx"></block>.</block>
@@ -568,4 +564,18 @@
   <block id="fa7394842a17e21de2bb5eb52a3d97eb" category="paragraph">Puede elegir unidades de volúmenes (GiB o TiB) al crear volúmenes en FSx para ONTAP.</block>
   <block id="25c675873bda3d8b54aac90e0f94b61a" category="paragraph">Ahora puedes crear volúmenes CIFS en FSx para ONTAP mediante Cloud Manager.</block>
   <block id="d3700b7f8295ad136939c888e0efdcee" category="paragraph">Ahora puede editar FSx para ONTAP Volumes con Cloud Manager.</block>
+  <block id="16e305f77c7a0272aceac8c95312d98a" category="doc">NetApp lanza recursos adicionales de CloudFormation</block>
+  <block id="c043b3439543ebfc027a3c1fcb5613a5" category="paragraph">NetApp ahora proporciona recursos de CloudFormation que permiten a los clientes utilizar componentes avanzados de ONTAP que no están expuestos en la consola de AWS. CloudFormation es el mecanismo de infraestructura como código de AWS. Se podrán crear relaciones de replicación, recursos compartidos CIFS, políticas de exportación NFS, snapshots, etc.</block>
+  <block id="01d4e72c68c36e8905e55eeb7f8aff0c" category="inline-link-macro">Administre los sistemas de archivos de Amazon FSx para NetApp ONTAP con CloudFormation</block>
+  <block id="f883109f2802c104ac9ae2e21a56b762" category="paragraph"><block ref="f883109f2802c104ac9ae2e21a56b762" category="inline-link-macro-rx"></block></block>
+  <block id="c92644a757476bbef61fa3b782e32d95" category="paragraph">Al agregar nuevas credenciales para FSx para ONTAP desde el almacenamiento en la fábrica de cargas de trabajo de BlueXP , deberá decidir en qué nivel de permisos, o _operational mode_, le gustaría operar. Para detectar e implementar recursos de AWS como FSx para sistemas de archivos ONTAP, necesitará permisos _read_ o _automate_. BlueXP  FSX para ONTAP funcionará en modo _BASIC_ a menos que seleccione el modo _READ_ o el modo _AUTOMATIC_. _Read_ son los mismos que los permisos de visualización. _Automate_ son lo mismo que los permisos de operación. <block ref="d6d34839020cc53cd6cb3ac295769611" category="inline-link-macro-rx"></block>.</block>
+  <block id="facff49e2bd72676ffc323376c6f7c86" category="section-title">Paso 1: Seleccione la capacidad de almacenamiento y cree la política de IAM</block>
+  <block id="643bb3986a2755c5582d9f82862ff934" category="paragraph">En esta sección, elegirá la funcionalidad de almacenamiento que se va a gestionar como parte de estas credenciales, y los permisos habilitados para el almacenamiento. También tiene la opción de seleccionar otras cargas de trabajo, como bases de datos, GenAI o VMware. Una vez que haya realizado las selecciones, deberá copiar los permisos de política para cada carga de trabajo seleccionada desde el CodeBox y agregarlos a la consola de administración de AWS dentro de su cuenta de AWS para crear las políticas.</block>
+  <block id="45f2112a5aef07c91c1003cce4dc5410" category="paragraph">Los permisos de almacenamiento también pueden copiarse de las siguientes pestañas.</block>
+  <block id="7a38975bfee632036d1205b2951258b2" category="open-title">Permisos de lectura</block>
+  <block id="79eecef4aff74983cfd4aed5da7f2f30" category="open-title">Automatice los permisos</block>
+  <block id="be0bf2e3af6b03378bb493466f3c335f" category="section-title">Administrar un sistema de archivos mediante Amazon CloudFormation</block>
+  <block id="c2f7d57c8ea888af74a7d46699221837" category="paragraph">Puedes aprovisionar y gestionar recursos del sistema de archivos FSx para ONTAP (volúmenes, recursos compartidos de CIFS, políticas de exportación y mucho más) con Amazon CloudFormation.</block>
+  <block id="2c263d7a0f58593b73a60f40d9f5805e" category="paragraph"><block ref="2c263d7a0f58593b73a60f40d9f5805e" category="inline-link-macro-rx"></block></block>
+  <block id="13ac5039f81a1aa4ae7419bf17b5b6a0" category="section-title">06 de enero de 2025</block>
 </blocks>

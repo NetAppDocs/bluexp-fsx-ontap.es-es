@@ -18,10 +18,10 @@ indexpage:
       url: "/use/task-creating-fsx-working-environment.html"
   - title: Utiliza FSx para ONTAP
     links:
+    - title: Crea un sistema de archivos FSx for ONTAP
+      url: "/use/task-creating-fsx-working-environment.html"
     - title: Gestionar un sistema de archivos FSx for ONTAP
       url: "/use/task-manage-working-environment.html"
-    - title: Configuración de host iSCSI y NVMe
-      url: https://docs.netapp.com/us-en/ontap-sanhost/
   - title: Conocimiento y apoyo
     links:
     - title: Regístrese para recibir soporte
