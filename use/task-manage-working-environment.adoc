@@ -38,7 +38,7 @@ image:screenshot-system-manager.png["Una captura de pantalla del panel derecho e
 
 Puedes aprovisionar y gestionar recursos del sistema de archivos FSx para ONTAP (volúmenes, recursos compartidos de CIFS, políticas de exportación y mucho más) con Amazon CloudFormation.
 
-link:https://github.com/NetApp/NetApp-CloudFormation-FSx-ONTAP-provider[""]
+link:https://github.com/NetApp/NetApp-CloudFormation-FSx-ONTAP-provider["NetApp CloudFormation FSx para el repositorio GitHub del proveedor de ONTAP"^]
 
 
 
