@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: use/task-remove-filesystem.html 
+keywords: amazon fsx for netapp ontap, fsx for ontap, fsx, remove fsx for ontap file system, remove file system, workspace, file system, disassociate file system, working environment 
+summary: Eliminar un sistema de archivos FSx para ONTAP de un espacio de trabajo en el lienzo de BlueXP . 
+---
+= Eliminar un sistema de archivos FSx para ONTAP de un espacio de trabajo en BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Eliminar un sistema de archivos FSx para ONTAP de un espacio de trabajo en el lienzo de BlueXP . Esta operación disocia el sistema de archivos de un espacio de trabajo para que pueda asociarlo a otro espacio de trabajo dentro de la misma cuenta.
+
+.Acerca de esta tarea
+Eliminar un sistema de archivos FSx para ONTAP de un espacio de trabajo lo elimina de BlueXP . No elimina el sistema de archivos FSx para ONTAP. Más tarde, puede volver a descubrir el sistema de archivos FSx para ONTAP, o entorno de trabajo, en el mismo espacio de trabajo o en un espacio de trabajo diferente desde la misma cuenta.
+
+.Pasos
+. Abra el lienzo de BlueXP .
+. Seleccione el entorno de trabajo que contiene el sistema de archivos que desea eliminar.
+. Seleccione *Ingresar entorno de trabajo*.
+. En la pestaña FSx para ONTAP en Almacenamiento, seleccione el menú de tres puntos y luego seleccione *Eliminar del espacio de trabajo*.
++
+image:screenshot-remove-file-system.png["Una captura de pantalla del menú abierto en el sistema de archivos. Se resalta la opción para eliminar del espacio de trabajo."]
+
+. Seleccione *Eliminar* para confirmar la eliminación del sistema de archivos del espacio de trabajo.
+
+
+.Resultado
+El sistema de archivos se elimina del espacio de trabajo. Ahora puede asociar el sistema de archivos a otro espacio de trabajo dentro de la misma cuenta.

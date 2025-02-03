@@ -1,0 +1,97 @@
+---
+sidebar: sidebar 
+permalink: use/task-monitor-operations.html 
+keywords: monitor databases, monitor jobs, track database jobs 
+summary: Haga un seguimiento de las operaciones de FSx para ONTAP y supervise el progreso de las operaciones con Tracker en BlueXP . 
+---
+= Supervisar las operaciones de FSx para ONTAP con Tracker en BlueXP 
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Supervise y realice un seguimiento de la ejecución de las operaciones de FSx para ONTAP y supervise el progreso de las tareas con Tracker en BlueXP .
+
+.Acerca de esta tarea
+BlueXP  ofrece Rastreador, una función de supervisión de trabajos, para que pueda supervisar y realizar un seguimiento del progreso y el estado de las credenciales, FSx para ONTAP y las operaciones de enlace, revisar detalles de las tareas y subtareas de operación, diagnosticar cualquier problema o fallo, editar parámetros para operaciones fallidas y volver a intentar operaciones fallidas.
+
+Hay varias acciones disponibles en Tracker. Puede filtrar trabajos por intervalo de tiempo (últimas 24 horas, 7 días, 14 días o 30 días), carga de trabajo, estado y usuario; buscar trabajos con la función de búsqueda; y descargar la tabla de trabajos como archivo CSV. Puede actualizar el rastreador en cualquier momento. Además, es posible volver a intentar una operación que ha fallado o editar parámetros para una operación que ha fallado y volver a intentar la operación.
+
+Tracker admite dos niveles de supervisión. Cada tarea, como la creación de un sistema de archivos, muestra la descripción de la tarea, el estado, la hora de inicio, la duración de la tarea, el usuario, la región, el recurso de proxy (asociación de enlaces), el identificador de tarea y todas las subtareas relacionadas.
+
+Niveles de tareas de Tracker con ejemplos::
++
+--
+* Nivel 1 (tarea principal): Realiza un seguimiento del despliegue del sistema de archivos.
+* Nivel 2 (subtarea): Realiza un seguimiento de las subtareas relacionadas con el despliegue del sistema de archivos.
+
+
+--
+Estado de la operación:: El estado de la operación en Tracker es el siguiente _in progress_, _success_ y _failed_.
+Frecuencia de operación:: La frecuencia de operación se basa en el tipo de tarea y la programación.
+Retención de eventos:: Los eventos se conservan en la interfaz de usuario durante 30 días.
+
+
+
+
+== Seguimiento y supervisión de operaciones
+
+Rastree y supervise las operaciones en BlueXP  con el Rastreador.
+
+.Pasos
+. En la consola de BlueXP , selecciona el icono de *Configuración* y selecciona *Rastreador*.
+. En Almacenamiento, selecciona *Ir a Inventario de almacenamiento*.
+. Desde el inventario de almacenamiento, selecciona el menú de configuración de la cuenta y luego selecciona *Rastreador*.
++
+image:screenshot-menu-tracker-option.png["Una captura de pantalla del menú con la opción Rastreador resaltada."]
+
+. En Tracker, vea las tareas o utilice los filtros o busque para restringir los resultados. También puede descargar un informe de todas las operaciones seleccionando *Exportar CSV*.
+
+
+
+
+== Ver solicitud de API
+
+Vea la solicitud API en CodeBox para una tarea en Tracker.
+
+.Pasos
+. En Rastreador, seleccione una tarea.
+. Seleccione el menú de tres puntos y luego seleccione *Ver solicitud de API*.
+
+
+
+
+== Vuelva a intentar una operación fallida
+
+Vuelva a intentar una operación fallida en Tracker. Al volver a intentar la operación fallida, se inicia una nueva tarea que puede supervisar en Tracker.
+
+También puede copiar el mensaje de error de una operación con un error.
+
+
+NOTE: Puede volver a intentar la operación fallida solo una vez.
+
+.Pasos
+. En Tracker, seleccione una operación fallida.
+. Seleccione el menú de tres puntos y luego seleccione *Reintentar*.
+
+
+.Resultado
+La operación se vuelve a iniciar y aparece como una nueva tarea en Tracker.
+
+
+
+== Edite y vuelva a intentar una operación con errores
+
+Edite los parámetros de la operación fallida y vuelva a intentar la operación fuera de Tracker.
+
+.Pasos
+. En Tracker, seleccione una operación fallida.
+. Seleccione el menú de tres puntos y luego seleccione *Editar y volver a intentarlo*.
++
+Se le redirige a la página de operaciones, por ejemplo, la creación del volumen, donde puede editar los parámetros y volver a intentar la operación.
+
+
+
+.Resultado
+Se vuelve a iniciar la operación. Vaya a Rastreador para ver el estado de la operación.
