@@ -18,6 +18,18 @@ Descubre las novedades de FSx para ONTAP.
 
 
 
+== 02 de marzo de 2025
+
+
+
+=== Eventos de CloudShell en Tracker
+
+Cada vez que utilice CloudShell para ejecutar operaciones de FSx para ONTAP desde cargas de trabajo de BlueXP , los eventos aparecen en Tracker.
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-monitor-operations.html["Aprende a supervisar y hacer un seguimiento de las operaciones de FSx para ONTAP en BlueXP "^]
+
+
+
 == 02 de febrero de 2025
 
 
