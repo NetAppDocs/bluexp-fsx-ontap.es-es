@@ -77,7 +77,7 @@ image:screenshot-add-credentials-manually.png["Una captura de pantalla que muest
 
 En esta sección, elegirá la funcionalidad de almacenamiento que se va a gestionar como parte de estas credenciales, y los permisos habilitados para el almacenamiento. También tiene la opción de seleccionar otras cargas de trabajo, como bases de datos, GenAI o VMware. Una vez que haya realizado las selecciones, deberá copiar los permisos de política para cada carga de trabajo seleccionada desde el CodeBox y agregarlos a la consola de administración de AWS dentro de su cuenta de AWS para crear las políticas.
 
-image:screenshot-create-policies-manual.png["Una captura de pantalla que muestra los tipos de capacidades de carga de trabajo que se gestionarán como parte de las políticas de estas credenciales."]
+image:screenshot-create-policies-manual-permissions-check.png["Una captura de pantalla que muestra los tipos de capacidades de carga de trabajo que se gestionarán como parte de las políticas de estas credenciales."]
 
 .Pasos
 . Desde la sección *Crear políticas*, habilite cada una de las capacidades de carga de trabajo que desea incluir en estas credenciales. Habilite *Storage* para crear y administrar sistemas de archivos.
@@ -85,6 +85,7 @@ image:screenshot-create-policies-manual.png["Una captura de pantalla que muestra
 Puede añadir más funcionalidades más adelante, solo tiene que seleccionar las cargas de trabajo que desee poner en marcha y gestionar actualmente.
 
 . Para aquellas capacidades de carga de trabajo que ofrecen una selección de niveles de permisos (automatizar o leer), seleccione el tipo de permisos que estarán disponibles con estas credenciales. link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["Obtenga información sobre los permisos, también conocidos como modos operativos"^].
+. Opcional: Seleccione *Activar verificación automática de permisos* para comprobar si tiene los permisos de cuenta de AWS necesarios para completar las operaciones de carga de trabajo. Al activar la comprobación, se agrega `iam:SimulatePrincipalPolicy permission` a las políticas de permisos. El propósito de este permiso es confirmar los permisos solamente. Puede eliminar el permiso después de agregar credenciales, pero le recomendamos que lo mantenga para evitar la creación de recursos para operaciones parcialmente correctas y para ahorrarle cualquier limpieza manual de recursos necesaria.
 . En la ventana CodeBox, copie los permisos de la primera directiva IAM.
 +
 Los permisos de almacenamiento también pueden copiarse de las siguientes pestañas.
@@ -129,51 +130,50 @@ Los permisos de almacenamiento también pueden copiarse de las siguientes pesta�
 [source, json]
 ----
 {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": [
-                "fsx:*",
-                "ec2:Describe*",
-                "ec2:CreateTags",
-                "ec2:CreateSecurityGroup",
-                "iam:CreateServiceLinkedRole",
-                "kms:Describe*",
-                "elasticfilesystem:Describe*",
-                "kms:List*",
-                "kms:CreateGrant",
-                "cloudwatch:PutMetricData",
-                "cloudwatch:GetMetricData",
-                "iam:SimulatePrincipalPolicy",
-                "cloudwatch:GetMetricStatistics"
-            ],
-            "Resource": "*"
-        },
-        {
-            "Effect": "Allow",
-            "Action": [
-                "ec2:AuthorizeSecurityGroupEgress",
-                "ec2:AuthorizeSecurityGroupIngress",
-                "ec2:RevokeSecurityGroupEgress",
-                "ec2:RevokeSecurityGroupIngress",
-                "ec2:DeleteSecurityGroup"
-            ],
-            "Resource": "*",
-            "Condition": {
-                "StringLike": {
-                    "ec2:ResourceTag/AppCreator": "NetappFSxWF"
-                }
-            }
-        },
-        {
-            "Effect": "Allow",
-            "Action": [
-                "iam:SimulatePrincipalPolicy"
-            ],
-            "Resource": "*"
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "fsx:*",
+        "ec2:Describe*",
+        "ec2:CreateTags",
+        "ec2:CreateSecurityGroup",
+        "iam:CreateServiceLinkedRole",
+        "kms:Describe*",
+        "elasticfilesystem:Describe*",
+        "kms:List*",
+        "kms:CreateGrant",
+        "cloudwatch:PutMetricData",
+        "cloudwatch:GetMetricData",
+        "cloudwatch:GetMetricStatistics"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "ec2:AuthorizeSecurityGroupEgress",
+        "ec2:AuthorizeSecurityGroupIngress",
+        "ec2:RevokeSecurityGroupEgress",
+        "ec2:RevokeSecurityGroupIngress",
+        "ec2:DeleteSecurityGroup"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "StringLike": {
+          "ec2:ResourceTag/AppCreator": "NetappFSxWF"
         }
-    ]
+      }
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "iam:SimulatePrincipalPolicy"
+      ],
+      "Resource": "*"
+    }
+  ]
 }
 ----
 --
@@ -278,6 +278,7 @@ image:screenshot-add-credentials-cloudformation.png["Una captura de pantalla que
 +
 Puede añadir más funcionalidades más adelante, solo tiene que seleccionar las cargas de trabajo que desee poner en marcha y gestionar actualmente.
 
+. Opcional: Seleccione *Activar verificación automática de permisos* para comprobar si tiene los permisos de cuenta de AWS necesarios para completar las operaciones de carga de trabajo. Al activar la comprobación, se agrega el `iam:SimulatePrincipalPolicy` permiso a las políticas de permisos. El propósito de este permiso es confirmar los permisos solamente. Puede eliminar el permiso después de agregar credenciales, pero le recomendamos que lo mantenga para evitar la creación de recursos para operaciones parcialmente correctas y para ahorrarle cualquier limpieza manual de recursos necesaria.
 . En *Nombre de Credenciales*, introduzca el nombre que desea utilizar para estas credenciales.
 . Agregue las credenciales de AWS CloudFormation:
 +
