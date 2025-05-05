@@ -1,0 +1,39 @@
+= Soporte de respuesta del rastreador
+:allow-uri-read: 
+
+
+
+
+=== Soporte de respuesta del rastreador
+
+Tracker ahora proporciona respuestas API para que pueda ver la salida de la API de REST en relación con la tarea.
+
+
+
+=== Soporte de autenticación de enlaces para AWS Secrets Manager
+
+Ahora tiene la opción de utilizar secretos de AWS Secrets Manager para autenticar enlaces de modo que no tenga que utilizar las credenciales almacenadas en cargas de trabajo de BlueXP .
+
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["Conéctese a un sistema de archivos FSx para ONTAP con un enlace Lambda"]
+
+
+
+=== Implemente las prácticas recomendadas para un sistema de archivos FSx para ONTAP
+
+Cargas de trabajo de BlueXP  proporciona un panel en el que se puede revisar el estado bien estructurado de las configuraciones del sistema de archivos. Puede aprovechar este análisis para implementar prácticas recomendadas para sus sistemas de archivos FSx para ONTAP. El análisis de configuración del sistema de archivos incluye las siguientes configuraciones: Umbral de capacidad de SSD, snapshots locales programados, backups programados de FSx para ONTAP, organización en niveles de datos y replicación de datos remota.
+
+* link:https://docs.netapp.com/us-en/workload-fsx-ontap/configuration-analysis.html["Obtenga más información sobre el análisis bien diseñado para las configuraciones de sistemas de archivos"]
+* link:https://review.docs.netapp.com/us-en/workload-fsx-ontap_well-architected/improve-configurations.html["Implemente prácticas recomendadas para sus sistemas de archivos"]
+
+
+
+
+=== Notificación bien diseñada para problemas del sistema de archivos
+
+En la consola de BlueXP , los sistemas de archivos FSX para ONTAP con problemas bien diseñados ahora muestran una notificación en el lienzo que indica cuándo los sistemas de archivos tienen problemas que corregir.
+
+
+
+=== Terminología de permisos actualizada
+
+La documentación y la interfaz de usuario de fábrica de cargas de trabajo ahora utilizan «de solo lectura» para hacer referencia a los permisos de lectura y «de lectura-escritura» para referirse a los permisos de automatización.
