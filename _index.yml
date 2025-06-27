@@ -1,6 +1,11 @@
 ---
 indexpage:
   title: Gestión de Amazon FSx para NetApp ONTAP mediante BlueXP 
+  summary: Amazon FSX para ONTAP de NetApp aporta todas las funcionalidades de ONTAP
+    a un servicio gestionado nativo de AWS que ofrece una experiencia de cloud híbrido
+    coherente. Esta documentación describe cómo gestionar FSX para ONTAP con NetApp
+    BlueXP.
+  keywords: amazon, fsx, netapp, ontap, bluexp, create, manage
   lead: Amazon FSX para ONTAP de NetApp aporta todas las funcionalidades de ONTAP
     a un servicio gestionado nativo de AWS que ofrece una experiencia de cloud híbrido
     coherente. Esta documentación describe cómo gestionar FSX para ONTAP con NetApp
