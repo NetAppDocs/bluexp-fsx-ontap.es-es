@@ -18,6 +18,18 @@ Descubre las novedades de FSx para ONTAP.
 
 
 
+== 14 de julio de 2025
+
+
+
+=== Soporte para replicar datos entre dos sistemas de archivos FSx para ONTAP
+
+La replicación de datos ahora está disponible entre dos sistemas de archivos FSx para ONTAP desde la consola BlueXP.
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html#replicate-data["Replicar datos"]
+
+
+
 == 29 de junio de 2025
 
 
@@ -27,14 +39,6 @@ Descubre las novedades de FSx para ONTAP.
 Después de configurar las credenciales y los permisos para su sistema de archivos de FSx for ONTAP, se le redirigirá a la página Credenciales de BlueXP. Desde esta página, puede cambiar el nombre o eliminar sus credenciales de FSx for ONTAP.
 
 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Configurar permisos para FSx para sistemas de archivos ONTAP"]
-
-
-
-=== Soporte para replicar datos entre dos sistemas de archivos FSx para ONTAP
-
-La replicación de datos ahora está disponible entre dos sistemas de archivos FSx para ONTAP desde la consola BlueXP.
-
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html#replicate-data["Replicar datos"]
 
 
 
