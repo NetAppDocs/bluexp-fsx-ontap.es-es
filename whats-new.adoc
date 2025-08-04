@@ -18,13 +18,30 @@ Descubre las novedades de FSx para ONTAP.
 
 
 
+== 03 de agosto de 2025
+
+
+
+=== Mejoras en la pestaña de relaciones de replicación
+
+Hemos agregado varias columnas nuevas a la tabla de relaciones de replicación para brindarle más información sobre sus relaciones de replicación en la pestaña *Relaciones de replicación*. La tabla ahora incluye las siguientes columnas:
+
+* Política de SnapMirror
+* Sistema de archivos fuente
+* Sistema de archivos de destino
+* Estado de la relación
+* Última hora de transferencia
+
+
+
+
 == 14 de julio de 2025
 
 
 
 === Soporte para replicar datos entre dos sistemas de archivos FSx para ONTAP
 
-La replicación de datos ahora está disponible entre dos sistemas de archivos FSx para ONTAP desde la consola BlueXP.
+La replicación de datos ahora está disponible entre dos sistemas de archivos FSx para ONTAP desde el lienzo en la consola BlueXP .
 
 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html#replicate-data["Replicar datos"]
 
